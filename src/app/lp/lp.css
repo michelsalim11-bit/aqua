@@ -1,0 +1,70 @@
+/* ==========================================================================
+   LP (lp.aquainvest.com.br) — port do export estático (Tailwind v4 → v3).
+   Tema próprio da LP, escopado em .lp-root para não conflitar com as
+   variáveis de mesmo nome do design system do site (globals.css).
+   ========================================================================== */
+
+.lp-root {
+  --bg: oklch(16.5% 0.004 259);
+  --bg-2: oklch(20.5% 0.006 259);
+  --surface: oklch(22.5% 0.007 259);
+  --surface-2: oklch(26.5% 0.009 259);
+  --line: oklch(100% 0 0 / 0.09);
+  --line-2: oklch(100% 0 0 / 0.05);
+  --fg: oklch(96.5% 0.004 259);
+  --muted: oklch(74% 0.012 259);
+  --faint: oklch(58% 0.012 259);
+  --green: #ede7dc;
+  --green-deep: #1b3a6b;
+  --green-ink: #1b3a6b;
+  --green-soft: rgb(237 231 220 / 0.12);
+  --green-glow: rgb(237 231 220 / 0.3);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-mantri), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.lp-root ::selection {
+  background: var(--green);
+  color: var(--green-ink);
+}
+
+.lp-root .shell {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+@media (min-width: 768px) {
+  .lp-root .shell {
+    padding-inline: 40px;
+  }
+}
+
+.lp-root .glow-top {
+  background: radial-gradient(60% 50% at 50% -5%, var(--green-soft), transparent 60%);
+}
+
+.lp-root [data-reveal] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s var(--ease-out-expo), transform 0.7s var(--ease-out-expo);
+  transition-delay: var(--reveal-delay, 0s);
+  will-change: opacity, transform;
+}
+.lp-root [data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .lp-root [data-reveal] {
+    opacity: 1;
+    transition: none;
+    transform: none;
+  }
+}

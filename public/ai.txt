@@ -1,0 +1,27 @@
+# ai.txt - Diretrizes de Controle e Permissões para Inteligência Artificial
+# Alinhado com as especificações de Spawning AI (ai.txt standard)
+
+# Declaração geral: Permite busca/inferência, mas restringe treinamento de modelos base sem autorização
+User-agent: *
+Allow: /
+Allow: /llms.txt
+No-Training: /
+
+# Permissão de leitura e busca em tempo real para os principais assistentes/buscadores de IA
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
