@@ -5,15 +5,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        aqua: {
-          green: '#ede7dc',
-          'green-soft': '#f2ede2',
-          'green-hover': '#ddd4c0',
-          'green-deep': '#1b3a6b',
-          dark: '#1b3a6b',
-          'dark-soft': '#1f2e4a',
-          'dark-card': '#16233c',
-          'dark-deep': '#0f1930',
+        acqua: {
+          cream: '#ede7dc',
+          'cream-soft': '#f2ede2',
+          'cream-hover': '#ddd4c0',
+          blue: '#1b3a6b',
+          'blue-soft': '#1f2e4a',
+          'blue-deep': '#12213f',
+          'blue-card': '#16233c',
         },
       },
       fontFamily: {
@@ -21,15 +20,15 @@ const config: Config = {
       },
       backgroundImage: {
         'grid-pattern':
-          'linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)',
+          'linear-gradient(rgba(23,40,74,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(23,40,74,0.06) 1px, transparent 1px)',
         'hero-radial':
-          'radial-gradient(circle at 50% 0%, rgba(237,231,220,0.18), transparent 60%)',
+          'radial-gradient(circle at 50% 0%, rgba(27,58,107,0.14), transparent 60%)',
         'cta-gradient':
-          'linear-gradient(135deg, rgba(237,231,220,0.18) 0%, rgba(237,231,220,0.04) 100%)',
+          'linear-gradient(135deg, rgba(27,58,107,0.14) 0%, rgba(27,58,107,0.03) 100%)',
       },
       boxShadow: {
-        glow: '0 0 60px -10px rgba(237,231,220,0.45)',
-        'card-soft': '0 8px 30px -12px rgba(0,0,0,0.6)',
+        glow: '0 0 60px -10px rgba(27,58,107,0.35)',
+        'card-soft': '0 8px 30px -12px rgba(23,40,74,0.12)',
       },
       keyframes: {
         floatSlow: {

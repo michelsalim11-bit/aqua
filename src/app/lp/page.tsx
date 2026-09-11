@@ -1,4 +1,4 @@
-import { AquaLogo } from './AquaLogo';
+import { AcquaLogo } from './AcquaLogo';
 import { LpEffects } from './LpEffects';
 import { LpForm } from './LpForm';
 import { LpHeader } from './LpHeader';
@@ -21,7 +21,7 @@ const CheckIcon = () => (
 
 const OPORTUNIDADES = [
   {
-    nome: 'AQUAPRO',
+    nome: 'ACQUAPRO',
     tipo: 'Remuneração ao final do prazo',
     taxa: '1,35%',
     destaque: false,
@@ -31,7 +31,7 @@ const OPORTUNIDADES = [
     delay: '0ms',
   },
   {
-    nome: 'AQUAPRIME',
+    nome: 'ACQUAPRIME',
     tipo: 'Remuneração ao final do prazo',
     taxa: '1,50%',
     destaque: true,
@@ -41,7 +41,7 @@ const OPORTUNIDADES = [
     delay: '90ms',
   },
   {
-    nome: 'AQUAPLUS',
+    nome: 'ACQUAPLUS',
     tipo: 'Remuneração mensal',
     taxa: '1,25%',
     destaque: false,
@@ -57,7 +57,7 @@ const DIFERENCIAIS = [
     numero: '01',
     titulo: 'Um mercado que era restrito',
     texto:
-      'Operações ligadas à economia real e ao crédito privado ficaram por muito tempo concentradas entre bancos, fundos e grandes instituições. A Aqua usa tecnologia e curadoria para abrir esse acesso.',
+      'Operações ligadas à economia real e ao crédito privado ficaram por muito tempo concentradas entre bancos, fundos e grandes instituições. A Acqua usa tecnologia e curadoria para abrir esse acesso.',
     delay: '0ms',
   },
   {
@@ -120,7 +120,7 @@ export default function LpPage() {
                 A economia <span className="text-[var(--green)]">não pode esperar.</span>
               </h1>
               <p className="mt-7 max-w-xl text-[17px] leading-relaxed text-[var(--muted)]">
-                A Aqua conecta você a oportunidades ligadas à economia real. Acesso a um mercado
+                A Acqua conecta você a oportunidades ligadas à economia real. Acesso a um mercado
                 historicamente restrito a bancos, fundos e grandes instituições.
               </p>
               <ul className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-7">
@@ -233,7 +233,7 @@ export default function LpPage() {
               style={{ '--reveal-delay': '0ms' } as React.CSSProperties}
             >
               <span className="text-[13px] font-bold uppercase tracking-[0.2em] text-[var(--green)]">
-                Por que a Aqua
+                Por que a Acqua
               </span>
               <h2 className="mt-3 text-[clamp(2rem,4vw,3.1rem)] font-black leading-[1.03] tracking-[-0.03em]">
                 Acesso à economia real, sem a complexidade de sempre.
@@ -315,7 +315,7 @@ export default function LpPage() {
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-[17px] leading-relaxed text-[var(--muted)]">
               Crescimento não acontece quando os recursos ficam parados. Fale com um especialista da
-              Aqua e descubra como participar da economia real.
+              Acqua e descubra como participar da economia real.
             </p>
             <a
               href="#cadastro"
@@ -335,7 +335,7 @@ export default function LpPage() {
         <div className="shell">
           <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
             <div>
-              <AquaLogo className="h-8 w-auto text-[var(--green)]" />
+              <AcquaLogo className="h-8 w-auto text-[var(--green)]" />
               <p className="mt-4 text-sm font-semibold text-[var(--muted)]">Você pode mais.</p>
             </div>
             <nav className="flex flex-wrap gap-x-8 gap-y-3">
@@ -351,7 +351,7 @@ export default function LpPage() {
             </nav>
           </div>
           <p className="mt-10 max-w-4xl text-xs leading-relaxed text-[var(--faint)]">
-            A Aqua é uma plataforma de tecnologia que conecta investidores a oportunidades ligadas à
+            A Acqua é uma plataforma de tecnologia que conecta investidores a oportunidades ligadas à
             economia real. Este conteúdo possui caráter exclusivamente informativo e não constitui
             oferta, recomendação ou aconselhamento. Simulações e projeções, quando apresentadas, não
             representam garantia de remuneração futura. Toda operação envolve riscos e deve ser

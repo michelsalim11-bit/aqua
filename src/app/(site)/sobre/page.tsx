@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
-const TITLE = 'A Aqua';
+const TITLE = 'A Acqua';
 const DESCRIPTION =
-  'A Aqua é uma plataforma eletrônica que aproxima pessoas de oportunidades ligadas à economia real, ampliando o acesso a mercados relevantes para o crescimento econômico.';
+  'A Acqua é uma plataforma eletrônica que aproxima pessoas de oportunidades ligadas à economia real, ampliando o acesso a mercados relevantes para o crescimento econômico.';
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${TITLE} | Seja Acqua`,
     description: DESCRIPTION,
-    url: 'https://aquainvest.com.br/sobre',
+    url: 'https://sejaacqua.com.br/sobre',
     type: 'website',
   },
 };
@@ -86,7 +86,7 @@ export default function SobrePage() {
       {/* PAGE HERO */}
       <section className="page-hero">
         <div className="wrap reveal">
-          <span className="eyebrow">A Aqua</span>
+          <span className="eyebrow">A Acqua</span>
           <h1>Mais acesso. Mais possibilidades.</h1>
           <p>
             A economia se move todos os dias. Empresas vendem, produzem, contratam e crescem. Mas
@@ -105,7 +105,7 @@ export default function SobrePage() {
               atividade econômica e para o crescimento.
             </p>
             <p>
-              A Aqua nasce conectada a esse contexto. Somos uma plataforma eletrônica que aproxima
+              A Acqua nasce conectada a esse contexto. Somos uma plataforma eletrônica que aproxima
               pessoas de oportunidades ligadas à economia real, ampliando o acesso a mercados que
               durante muito tempo permaneceram concentrados em poucos participantes.
             </p>
@@ -123,7 +123,7 @@ export default function SobrePage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/bg-sobre.jpg"
-              alt="Pessoa conectada à plataforma Aqua pelo celular"
+              alt="Pessoa conectada à plataforma Acqua pelo celular"
               loading="lazy"
               width={1200}
               height={896}
@@ -178,7 +178,7 @@ export default function SobrePage() {
       <section className="band imgband final">
         <div className="bg" aria-hidden="true" />
         <div className="wrap">
-          <h2 className="reveal">Faça seu cadastro e conheça a plataforma Aqua.</h2>
+          <h2 className="reveal">Faça seu cadastro e conheça a plataforma Acqua.</h2>
           <div className="cta-row reveal">
             <a className="btn btn-primary" href="/#cadastro">
               Faça seu cadastro{' '}

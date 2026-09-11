@@ -4,23 +4,23 @@ import Link from 'next/link';
 import { SiteEffects } from '@/components/SiteEffects';
 import { MobileMenu } from '@/components/MobileMenu';
 import { CadastroForm } from '@/components/home/CadastroForm';
+import { Hero } from '@/components/home/Hero';
 import './home-v2.css';
 
-const APP_LOGIN = 'https://app.aquainvest.com.br/sign-in';
+const APP_LOGIN = 'https://app.sejaacqua.com.br/sign-in';
 const WHATSAPP = 'https://wa.me/5511991948472';
 
 const NAV_LINKS = [
-  { href: '#quem', label: 'Quem é a Aqua' },
+  { href: '#quem', label: 'Quem é a Acqua' },
   { href: '#mvv', label: 'Missão e valores' },
   { href: '#mercado', label: 'O mercado' },
   { href: '#produto', label: 'Produto' },
   { href: '/calculadora', label: 'Calculadora' },
-  { href: '/sobre-nos', label: 'Sobre Nós' },
 ];
 
 const TITLE = 'Seja Acqua · Acesso à economia real';
 const DESCRIPTION =
-  'A Aqua é uma plataforma de tecnologia que aproxima você de oportunidades ligadas ao mercado de crédito e recebíveis.';
+  'A Acqua é uma plataforma de tecnologia que aproxima você de oportunidades ligadas ao mercado de crédito e recebíveis.';
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
-    url: 'https://aquainvest.com.br/',
+    url: 'https://sejaacqua.com.br/',
     type: 'website',
   },
 };
@@ -83,7 +83,7 @@ function HomeFooter() {
             </p>
             <div className="socials" aria-label="Redes sociais">
               <a
-                href="https://www.instagram.com/aquainvestbr/"
+                href="https://www.instagram.com/sejaacqua/"
                 aria-label="Instagram"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -105,7 +105,7 @@ function HomeFooter() {
             <h4>Institucional</h4>
             <ul>
               <li>
-                <a href="#quem">Quem é a Aqua</a>
+                <a href="#quem">Quem é a Acqua</a>
               </li>
               <li>
                 <a href="#mvv">Missão, visão e valores</a>
@@ -128,7 +128,7 @@ function HomeFooter() {
                 <a href="#cadastro">Tenho interesse</a>
               </li>
               <li>
-                <a href="mailto:contato@aquainvest.com.br">contato@aquainvest.com.br</a>
+                <a href="mailto:contato@sejaacqua.com.br">contato@sejaacqua.com.br</a>
               </li>
               <li>Segunda a sexta, das 9h às 18h</li>
               <li>
@@ -140,7 +140,7 @@ function HomeFooter() {
             <h4 style={{ marginTop: '1.6rem' }}>Privacidade</h4>
             <ul>
               <li>
-                <a href="mailto:dpo@aquainvest.com.br">dpo@aquainvest.com.br</a>
+                <a href="mailto:dpo@sejaacqua.com.br">dpo@sejaacqua.com.br</a>
               </li>
             </ul>
           </div>
@@ -162,7 +162,7 @@ export default function HomePage() {
     <div className="home-v2">
       <a
         href="#top"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-aqua-green focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-aqua-dark"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-acqua-blue focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-acqua-cream"
       >
         Ir para o conteúdo
       </a>
@@ -170,34 +170,9 @@ export default function HomePage() {
 
       <main id="top">
         {/* ===================== HERO ===================== */}
-        <section className="band imgband hero">
-          <div className="bg" aria-hidden="true" />
-          <div className="wrap">
-            <div className="body-wrap reveal">
-              <span className="eyebrow">Você pode Mais</span>
-              <h1>Economia real. Oportunidades reais.</h1>
-              <p className="subhead">
-                A Aqua é uma plataforma de tecnologia que aproxima você de oportunidades ligadas ao
-                mercado de crédito e recebíveis. Aqui, você conhece as condições, entende como cada
-                possibilidade funciona e encontra as informações necessárias para decidir o próximo
-                passo.
-              </p>
-              <div className="cta-row">
-                <a className="btn btn-primary" href="#quem">
-                  Entenda como a Aqua funciona{' '}
-                  <span className="arr" aria-hidden="true">
-                    →
-                  </span>
-                </a>
-                <a className="btn btn-ghost" href={WHATSAPP} target="_blank" rel="noopener noreferrer">
-                  Fale com a gente
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Hero whatsapp={WHATSAPP} />
 
-        {/* ===================== 1 · QUEM É A AQUA ===================== */}
+        {/* ===================== 1 · QUEM É A ACQUA ===================== */}
         <section className="feature feature--rev" id="quem">
           <div className="feature__media reveal">
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -206,10 +181,10 @@ export default function HomePage() {
           <div className="feature__body reveal">
             <span className="trilha-tag">
               <span className="n">1</span>
-              <span className="lbl">Quem é a Aqua</span>
+              <span className="lbl">Quem é a Acqua</span>
             </span>
             <h2 className="lead-h">
-              A Aqua é uma plataforma de tecnologia <span className="hl">conectada à economia real.</span>
+              A Acqua é uma plataforma de tecnologia <span className="hl">conectada à economia real.</span>
             </h2>
             <p className="lead-sub">
               Um ambiente criado para aproximar pessoas de oportunidades, organizar informações e
@@ -217,7 +192,7 @@ export default function HomePage() {
             </p>
             <div className="prose" style={{ marginTop: '1.4rem' }}>
               <p>
-                A Aqua nasceu para tornar mais simples o acesso a mercados que, por muito tempo,
+                A Acqua nasceu para tornar mais simples o acesso a mercados que, por muito tempo,
                 ficaram distantes da maioria das pessoas.
               </p>
               <p>
@@ -238,7 +213,7 @@ export default function HomePage() {
           <span id="principios" aria-hidden="true" />
           <div className="wrap">
             <div className="section-head reveal">
-              <h2 className="lead-h">Como a Aqua pensa, trabalha e se relaciona.</h2>
+              <h2 className="lead-h">Como a Acqua pensa, trabalha e se relaciona.</h2>
             </div>
             <div className="mv-grid" style={{ marginBottom: 'clamp(1.8rem,4vw,3rem)' }}>
               <article className="mv reveal">
@@ -283,7 +258,7 @@ export default function HomePage() {
               <article className="pcard reveal d2">
                 <div className="pcard__img">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/v2/princ-compreensao.jpg" alt="Cliente conversando com a equipe da Aqua" loading="lazy" />
+                  <img src="/v2/princ-compreensao.jpg" alt="Cliente conversando com a equipe da Acqua" loading="lazy" />
                 </div>
                 <div className="pcard__body">
                   <h3>Proximidade</h3>
@@ -410,7 +385,7 @@ export default function HomePage() {
               </span>
               <h2 className="lead-h">Conheça antes de decidir.</h2>
               <p>
-                Na plataforma Aqua, você encontra oportunidades ligadas a operações de crédito e
+                Na plataforma Acqua, você encontra oportunidades ligadas a operações de crédito e
                 recebíveis. Cada possibilidade é apresentada com informações sobre origem,
                 condições, prazos, remuneração e riscos.
               </p>
@@ -474,19 +449,19 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Como a Aqua participa */}
+        {/* Como a Acqua participa */}
         <section className="feature feature--rev">
           <div className="feature__media reveal">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/v2/produto-participa.jpg" alt="Cliente consultando as oportunidades na plataforma Aqua" loading="lazy" />
+            <img src="/v2/produto-participa.jpg" alt="Cliente consultando as oportunidades na plataforma Acqua" loading="lazy" />
           </div>
           <div className="feature__body reveal">
-            <span className="eyebrow">Como a Aqua participa</span>
+            <span className="eyebrow">Como a Acqua participa</span>
             <h2 className="lead-h">
               Você conhece primeiro. <span className="hl">Decide depois.</span>
             </h2>
             <div className="prose" style={{ marginTop: '1.4rem' }}>
-              <p>A Aqua organiza as informações e apresenta as possibilidades disponíveis em um único ambiente.</p>
+              <p>A Acqua organiza as informações e apresenta as possibilidades disponíveis em um único ambiente.</p>
               <p>
                 Você consulta as condições, entende como a operação funciona e avalia cada
                 oportunidade com mais informação.
@@ -525,7 +500,7 @@ export default function HomePage() {
                 maxWidth: '54ch',
               }}
             >
-              Se você deseja saber mais sobre a Aqua, conhecer a plataforma ou esclarecer dúvidas,
+              Se você deseja saber mais sobre a Acqua, conhecer a plataforma ou esclarecer dúvidas,
               nossa equipe está pronta para ajudar.
             </p>
             <div className="cta-row reveal" style={{ justifyContent: 'center', marginTop: '1.8rem' }}>
@@ -545,7 +520,7 @@ export default function HomePage() {
               className="reveal"
               style={{ marginTop: '1.6rem', color: 'var(--ink-faint)', fontSize: 'var(--step--1)' }}
             >
-              contato@aquainvest.com.br · Segunda a sexta, das 9h às 18h
+              contato@sejaacqua.com.br · Segunda a sexta, das 9h às 18h
             </p>
           </div>
         </section>
@@ -557,9 +532,9 @@ export default function HomePage() {
             <p>
               As informações apresentadas possuem caráter exclusivamente institucional e
               informativo e não constituem oferta, recomendação ou aconselhamento financeiro. As
-              possibilidades eventualmente disponibilizadas pela Aqua estão sujeitas a critérios,
+              possibilidades eventualmente disponibilizadas pela Acqua estão sujeitas a critérios,
               análise, disponibilidade, condições específicas e riscos. O cadastro ou o contato com
-              a Aqua não representa aprovação, contratação, garantia de acesso, remuneração ou
+              a Acqua não representa aprovação, contratação, garantia de acesso, remuneração ou
               resultado.
             </p>
           </div>

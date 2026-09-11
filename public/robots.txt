@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
 
-Host: https://aquainvest.com.br
-Sitemap: https://aquainvest.com.br/sitemap.xml
+Host: https://sejaacqua.com.br
+Sitemap: https://sejaacqua.com.br/sitemap.xml
 
 # Permissao explicita para Crawlers de IA
 User-agent: GPTBot

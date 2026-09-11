@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${TITLE} | Seja Acqua`,
     description: DESCRIPTION,
-    url: 'https://aquainvest.com.br/calculadora',
+    url: 'https://sejaacqua.com.br/calculadora',
     type: 'website',
   },
 };

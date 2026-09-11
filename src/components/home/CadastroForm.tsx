@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import { isPhoneComplete, maskPhone } from '@/lib/phone';
 
-const APP_LOGIN = 'https://app.aquainvest.com.br/sign-up';
+const APP_LOGIN = 'https://app.sejaacqua.com.br/sign-up';
 
 /**
  * Form "Tenho interesse" da home (v2): pedido de contato, não cadastro —

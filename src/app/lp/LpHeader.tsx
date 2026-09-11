@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { AquaLogo } from './AquaLogo';
+import { AcquaLogo } from './AcquaLogo';
 
 const NAV = [
   { href: '#oportunidades', label: 'Oportunidades' },
@@ -29,7 +29,7 @@ export function LpHeader() {
     >
       <div className="shell flex h-16 items-center justify-between md:h-20">
         <a href="#top" aria-label="Seja Acqua — início" className="text-[var(--green)]">
-          <AquaLogo className="h-7 w-auto md:h-8" />
+          <AcquaLogo className="h-7 w-auto md:h-8" />
         </a>
         <nav className="hidden items-center gap-9 md:flex">
           {NAV.map((item) => (

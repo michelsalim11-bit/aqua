@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-const APP_SIGNUP = 'https://app.aquainvest.com.br/sign-up';
+const APP_SIGNUP = 'https://app.sejaacqua.com.br/sign-up';
 
 const TERMS = [6, 8, 12, 18, 24];
 const EU_M = 0.0135; // 1,35% a.m.

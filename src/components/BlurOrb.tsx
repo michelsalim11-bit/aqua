@@ -4,7 +4,7 @@ interface BlurOrbProps {
 }
 
 export function BlurOrb({ className = '', color = 'green' }: BlurOrbProps) {
-  const fill = color === 'green' ? 'bg-aqua-green/25' : 'bg-aqua-green-soft/15';
+  const fill = color === 'green' ? 'bg-acqua-blue/10' : 'bg-acqua-blue/6';
   return (
     <div
       aria-hidden

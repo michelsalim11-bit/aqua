@@ -2,15 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { MobileMenu } from '@/components/MobileMenu';
 
-const APP_LOGIN = 'https://app.aquainvest.com.br/sign-in';
+const APP_LOGIN = 'https://app.sejaacqua.com.br/sign-in';
 
 const navLinks = [
-  { href: '/#quem', label: 'Quem é a Aqua' },
+  { href: '/#quem', label: 'Quem é a Acqua' },
   { href: '/#mvv', label: 'Missão e valores' },
   { href: '/#mercado', label: 'O mercado' },
   { href: '/#produto', label: 'Produto' },
   { href: '/calculadora', label: 'Calculadora' },
-  { href: '/sobre-nos', label: 'Sobre Nós' },
 ];
 
 export function Header() {

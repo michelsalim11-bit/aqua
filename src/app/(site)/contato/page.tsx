@@ -3,7 +3,7 @@ import { ContatoForm } from '@/components/ContatoForm';
 
 const TITLE = 'Contato';
 const DESCRIPTION =
-  'Fale com a Aqua. Nossa equipe está pronta para ajudar você a conhecer a plataforma e esclarecer dúvidas.';
+  'Fale com a Acqua. Nossa equipe está pronta para ajudar você a conhecer a plataforma e esclarecer dúvidas.';
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${TITLE} | Seja Acqua`,
     description: DESCRIPTION,
-    url: 'https://aquainvest.com.br/contato',
+    url: 'https://sejaacqua.com.br/contato',
     type: 'website',
   },
 };
@@ -25,7 +25,7 @@ export default function ContatoPage() {
           <span className="eyebrow">Contato</span>
           <h1>Vamos conversar.</h1>
           <p>
-            Se você deseja saber mais sobre a Aqua, conhecer a plataforma ou esclarecer dúvidas,
+            Se você deseja saber mais sobre a Acqua, conhecer a plataforma ou esclarecer dúvidas,
             nossa equipe está pronta para ajudar.
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function ContatoPage() {
           <aside className="info-card reveal">
             <div className="blk">
               <h4>E-mail</h4>
-              <a href="mailto:contato@aquainvest.com.br">contato@aquainvest.com.br</a>
+              <a href="mailto:contato@sejaacqua.com.br">contato@sejaacqua.com.br</a>
             </div>
             <div className="blk">
               <h4>Atendimento</h4>
@@ -57,7 +57,7 @@ export default function ContatoPage() {
             </div>
             <div className="blk">
               <h4>Privacidade</h4>
-              <a href="mailto:dpo@aquainvest.com.br">dpo@aquainvest.com.br</a>
+              <a href="mailto:dpo@sejaacqua.com.br">dpo@sejaacqua.com.br</a>
               <p className="muted" style={{ marginTop: '0.4rem', fontSize: '0.88rem' }}>
                 Canal dedicado para assuntos relacionados à proteção de dados e privacidade.
               </p>

@@ -4,7 +4,7 @@
    ============================================================ */
 
 .sim-hl {
-  color: var(--aqua);
+  color: var(--acqua);
 }
 
 /* ---------- card ---------- */
@@ -74,7 +74,7 @@
   max-width: 200px;
 }
 .sim-amount:focus {
-  color: var(--aqua);
+  color: var(--acqua);
 }
 
 /* slider */
@@ -86,8 +86,8 @@
   border-radius: 999px;
   background: linear-gradient(
     90deg,
-    var(--aqua) 0%,
-    var(--aqua) var(--p, 25%),
+    var(--acqua) 0%,
+    var(--acqua) var(--p, 25%),
     var(--line) var(--p, 25%),
     var(--line) 100%
   );
@@ -100,18 +100,18 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: var(--aqua);
+  background: var(--acqua);
   border: 3px solid var(--bg);
-  box-shadow: 0 0 0 1px var(--aqua), 0 4px 14px var(--aqua-soft);
+  box-shadow: 0 0 0 1px var(--acqua), 0 4px 14px var(--acqua-soft);
   cursor: pointer;
 }
 .sim-range::-moz-range-thumb {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: var(--aqua);
+  background: var(--acqua);
   border: 3px solid var(--bg);
-  box-shadow: 0 0 0 1px var(--aqua);
+  box-shadow: 0 0 0 1px var(--acqua);
   cursor: pointer;
 }
 .sim-ticks {
@@ -131,7 +131,7 @@
   transition: color 0.2s;
 }
 .sim-ticks button.active {
-  color: var(--aqua);
+  color: var(--acqua);
   font-weight: 600;
 }
 
@@ -180,7 +180,7 @@
   transition: filter 0.3s ease;
 }
 .sim-eu-val {
-  color: var(--aqua);
+  color: var(--acqua);
 }
 .cdi-val,
 .cdi-n {
@@ -192,7 +192,7 @@
 }
 .sim-badge {
   display: inline-block;
-  background: var(--aqua);
+  background: var(--acqua);
   color: var(--ink-deep);
   font-size: 11px;
   font-weight: 800;
@@ -239,7 +239,7 @@
   transition: filter 0.3s ease;
 }
 .eu-name .n {
-  color: var(--aqua);
+  color: var(--acqua);
 }
 
 /* estado mascarado do "Eu" */
@@ -274,7 +274,7 @@
 
 .sim-highlight {
   margin-top: 22px;
-  background: var(--aqua-soft);
+  background: var(--acqua-soft);
   border: 1px solid var(--line-2);
   border-radius: 14px;
   padding: 15px 16px;
@@ -284,7 +284,7 @@
   transition: opacity 0.4s ease;
 }
 .sim-highlight b {
-  color: var(--aqua);
+  color: var(--acqua);
   font-weight: 800;
 }
 .sim-card.masked .sim-highlight {
@@ -316,7 +316,7 @@
   transition: color 0.2s;
 }
 .sim-reset:hover {
-  color: var(--aqua);
+  color: var(--acqua);
 }
 
 /* informativo */

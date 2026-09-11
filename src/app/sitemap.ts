@@ -1,12 +1,11 @@
 import type { MetadataRoute } from 'next';
 
-const SITE_URL = 'https://aquainvest.com.br';
+const SITE_URL = 'https://sejaacqua.com.br';
 
 const routes = [
   { path: '/', priority: 1.0, changeFrequency: 'monthly' as const },
   { path: '/sobre', priority: 0.8, changeFrequency: 'monthly' as const },
   { path: '/contato', priority: 0.8, changeFrequency: 'monthly' as const },
-  { path: '/sobre-nos', priority: 0.6, changeFrequency: 'monthly' as const },
   { path: '/calculadora', priority: 0.7, changeFrequency: 'monthly' as const },
   { path: '/legal', priority: 0.5, changeFrequency: 'yearly' as const },
   { path: '/termos-de-uso', priority: 0.4, changeFrequency: 'yearly' as const },

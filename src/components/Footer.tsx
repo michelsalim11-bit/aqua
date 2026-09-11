@@ -15,7 +15,7 @@ export function Footer() {
               real.
             </p>
             <div className="socials" aria-label="Redes sociais">
-              <a href="https://www.instagram.com/aquainvestbr/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/sejaacqua/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                   <rect x="3" y="3" width="18" height="18" rx="5" />
                   <circle cx="12" cy="12" r="4" />
@@ -29,7 +29,7 @@ export function Footer() {
             <h4>Contato</h4>
             <ul>
               <li>
-                <a href="mailto:contato@aquainvest.com.br">contato@aquainvest.com.br</a>
+                <a href="mailto:contato@sejaacqua.com.br">contato@sejaacqua.com.br</a>
               </li>
               <li>Segunda a sexta, 09h às 18h</li>
               <li>
@@ -41,7 +41,7 @@ export function Footer() {
             <h4 style={{ marginTop: '1.6rem' }}>Privacidade</h4>
             <ul>
               <li>
-                <a href="mailto:dpo@aquainvest.com.br">dpo@aquainvest.com.br</a>
+                <a href="mailto:dpo@sejaacqua.com.br">dpo@sejaacqua.com.br</a>
               </li>
             </ul>
           </div>
@@ -50,7 +50,7 @@ export function Footer() {
             <h4>Institucional</h4>
             <ul>
               <li>
-                <Link href="/sobre">A Aqua</Link>
+                <Link href="/sobre">A Acqua</Link>
               </li>
               <li>
                 <Link href="/#mercado">O mercado</Link>
@@ -60,9 +60,6 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/calculadora">Calculadora</Link>
-              </li>
-              <li>
-                <Link href="/sobre-nos">Sobre Nós</Link>
               </li>
               <li>
                 <Link href="/legal">Documentos legais</Link>
@@ -78,7 +75,7 @@ export function Footer() {
             <Link href="/codigo-de-etica-e-conduta">Código de Ética e Conduta</Link>
           </div>
           <p style={{ marginTop: '1.4rem' }}>
-            A Aqua é uma plataforma de tecnologia que conecta investidores a
+            A Acqua é uma plataforma de tecnologia que conecta investidores a
             oportunidades ligadas à economia real. Este conteúdo possui caráter
             exclusivamente informativo e não constitui oferta, recomendação ou
             aconselhamento. Simulações e projeções, quando apresentadas, não

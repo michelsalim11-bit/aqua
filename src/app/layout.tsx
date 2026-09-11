@@ -3,10 +3,10 @@ import { Bricolage_Grotesque, Hanken_Grotesk } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 
-const SITE_URL = 'https://aquainvest.com.br';
+const SITE_URL = 'https://sejaacqua.com.br';
 const SITE_NAME = 'Seja Acqua';
 const DESCRIPTION =
-  'A Aqua aproxima você de um mercado que contribui para a circulação de recursos na economia, conectando pessoas a oportunidades ligadas à atividade empresarial e ao crescimento econômico.';
+  'A Acqua aproxima você de um mercado que contribui para a circulação de recursos na economia, conectando pessoas a oportunidades ligadas à atividade empresarial e ao crescimento econômico.';
 
 const bricolage = Bricolage_Grotesque({
   subsets: ['latin'],
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   publisher: SITE_NAME,
   keywords: [
     'Seja Acqua',
-    'Aqua',
+    'Acqua',
     'economia real',
     'liquidez empresarial',
     'capital de giro',
@@ -118,14 +118,14 @@ const jsonLd = {
     {
       '@type': 'ContactPoint',
       contactType: 'customer service',
-      email: 'contato@aquainvest.com.br',
+      email: 'contato@sejaacqua.com.br',
       availableLanguage: ['Portuguese'],
       areaServed: 'BR',
     },
     {
       '@type': 'ContactPoint',
       contactType: 'data protection officer',
-      email: 'dpo@aquainvest.com.br',
+      email: 'dpo@sejaacqua.com.br',
       availableLanguage: ['Portuguese'],
     },
   ],

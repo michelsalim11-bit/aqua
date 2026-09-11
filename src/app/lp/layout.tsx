@@ -17,17 +17,17 @@ const mantri = localFont({
 
 const TITLE = 'Seja Acqua — Você pode mais';
 const DESCRIPTION =
-  'A Aqua conecta você a oportunidades ligadas à economia real. Acesso a um mercado historicamente restrito a bancos, fundos e grandes instituições.';
+  'A Acqua conecta você a oportunidades ligadas à economia real. Acesso a um mercado historicamente restrito a bancos, fundos e grandes instituições.';
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
-  alternates: { canonical: 'https://lp.aquainvest.com.br' },
+  alternates: { canonical: 'https://lp.sejaacqua.com.br' },
   robots: { index: false, follow: false, nocache: true },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
-    url: 'https://lp.aquainvest.com.br',
+    url: 'https://lp.sejaacqua.com.br',
     type: 'website',
   },
 };

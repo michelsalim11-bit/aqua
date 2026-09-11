@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const TITLE = 'Documentos legais';
 const DESCRIPTION =
-  'Documentos que orientam a relação entre a Aqua, seus clientes, parceiros e visitantes.';
+  'Documentos que orientam a relação entre a Acqua, seus clientes, parceiros e visitantes.';
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${TITLE} | Seja Acqua`,
     description: DESCRIPTION,
-    url: 'https://aquainvest.com.br/legal',
+    url: 'https://sejaacqua.com.br/legal',
     type: 'website',
   },
 };
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const docs = [
   {
     title: 'Termos de Uso',
-    text: 'Condições de utilização da plataforma e dos canais digitais da Aqua.',
+    text: 'Condições de utilização da plataforma e dos canais digitais da Acqua.',
     href: '/termos-de-uso',
     icon: (
       <svg className="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
@@ -42,7 +42,7 @@ const docs = [
   },
   {
     title: 'Código de Ética e Conduta',
-    text: 'Princípios que orientam a atuação da Aqua e o relacionamento com clientes, parceiros e colaboradores.',
+    text: 'Princípios que orientam a atuação da Acqua e o relacionamento com clientes, parceiros e colaboradores.',
     href: '/codigo-de-etica-e-conduta',
     icon: (
       <svg className="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
@@ -60,7 +60,7 @@ export default function LegalPage() {
           <span className="eyebrow">Legal</span>
           <h1>Transparência faz parte da nossa forma de atuar.</h1>
           <p>
-            Aqui você encontra os documentos que orientam a relação entre a Aqua, seus clientes,
+            Aqui você encontra os documentos que orientam a relação entre a Acqua, seus clientes,
             parceiros e visitantes.
           </p>
         </div>

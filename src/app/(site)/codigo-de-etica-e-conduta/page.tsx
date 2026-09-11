@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Código de Ética e Conduta — Seja Acqua',
     description:
       'Princípios que orientam a atuação de todos que fazem parte da Seja Acqua.',
-    url: 'https://aquainvest.com.br/codigo-de-etica-e-conduta',
+    url: 'https://sejaacqua.com.br/codigo-de-etica-e-conduta',
     type: 'article',
   },
 };
@@ -33,15 +33,15 @@ export default function CodeOfEthicsPage() {
           <article className="prose-legal" style={{ maxWidth: '760px' }}>
             <h2>Código de Ética e Conduta da Seja Acqua</h2>
             <p>
-              Este Código de Ética e Conduta da <strong>Seja Acqua</strong> (“Aqua”) torna público os princípios
-              que devem pautar a atuação de todos aqueles que auxiliam o desenvolvimento das atividades da Aqua,
+              Este Código de Ética e Conduta da <strong>Seja Acqua</strong> (“Acqua”) torna público os princípios
+              que devem pautar a atuação de todos aqueles que auxiliam o desenvolvimento das atividades da Acqua,
               notadamente seus sócios,
               administradores, prestadores de serviços e fornecedores (“Credenciados”).
             </p>
             <p>
-              Nosso Código de Ética e Conduta reflete a visão, a missão e os valores da Aqua. Visa integrar todos à
+              Nosso Código de Ética e Conduta reflete a visão, a missão e os valores da Acqua. Visa integrar todos à
               nossa filosofia, criando uma cultura corporativa onde a expansão dos negócios e o exercício da ética
-              são complementares e inter-relacionados. Deste modo, a Aqua almeja proteger sua reputação (seu
+              são complementares e inter-relacionados. Deste modo, a Acqua almeja proteger sua reputação (seu
               patrimônio intangível), construindo e consolidando-se como empresa íntegra, diligente e sólida.
             </p>
 
@@ -50,11 +50,11 @@ export default function CodeOfEthicsPage() {
             </p>
             <ul>
               <li>Colocar, sempre, os interesses dos clientes à frente dos seus próprios interesses;</li>
-              <li>Agir com honestidade, integridade, transparência, diligência e lealdade em relação aos clientes da Aqua;</li>
+              <li>Agir com honestidade, integridade, transparência, diligência e lealdade em relação aos clientes da Acqua;</li>
               <li>Nunca levar vantagem de sua posição para benefício pessoal;</li>
               <li>Identificar, administrar e mitigar eventuais conflitos de interesse, nas respectivas esferas de atuação;</li>
               <li>
-                Conhecer e entender suas obrigações junto à Aqua, bem como as normas legais que as regulam, de
+                Conhecer e entender suas obrigações junto à Acqua, bem como as normas legais que as regulam, de
                 forma a evitar quaisquer práticas que infrinjam ou estejam em conflito com as regras e princípios
                 contidos neste código e na regulamentação em vigor;
               </li>
@@ -69,7 +69,7 @@ export default function CodeOfEthicsPage() {
                 concorrência, evitando a adoção de práticas caracterizadoras de concorrência desleal e/ou de
                 condições não equitativas;
               </li>
-              <li>Evitar práticas que possam vir a prejudicar o desenvolvimento das atividades da Aqua.</li>
+              <li>Evitar práticas que possam vir a prejudicar o desenvolvimento das atividades da Acqua.</li>
             </ul>
 
             <h2>A. Profissionalismo</h2>
@@ -86,12 +86,12 @@ export default function CodeOfEthicsPage() {
               As condutas dos Credenciados devem ser executadas, sempre, com o conhecimento, a cautela e o
               discernimento necessários para atingir e manter a independência e a objetividade em suas atividades.
               Os Credenciados estão proibidos de oferecer, solicitar ou aceitar presentes, remunerações, pagamentos
-              ou quaisquer benefícios indevidos que comprometam sua independência e a lisura da Aqua.
+              ou quaisquer benefícios indevidos que comprometam sua independência e a lisura da Acqua.
             </p>
             <h3>3. Conteúdo atualizado</h3>
             <p>
               No relacionamento com os clientes, os Credenciados deverão utilizar o material e o conteúdo presentes
-              nas plataformas oficiais da Aqua, para que sempre haja utilização do conteúdo correto e atualizado.
+              nas plataformas oficiais da Acqua, para que sempre haja utilização do conteúdo correto e atualizado.
             </p>
             <h3>4. Conduta adequada</h3>
             <p>
@@ -100,9 +100,9 @@ export default function CodeOfEthicsPage() {
               atos de desonestidade, fraude ou que possam lesar terceiros.
             </p>
             <p>
-              Caso perceba ou suspeite de alguma conduta inadequada por qualquer Credenciado da Aqua, nos avise no
+              Caso perceba ou suspeite de alguma conduta inadequada por qualquer Credenciado da Acqua, nos avise no
               e-mail{' '}
-              <a href="mailto:compliance@aquainvest.com.br">compliance@aquainvest.com.br</a>{' '}
+              <a href="mailto:compliance@sejaacqua.com.br">compliance@sejaacqua.com.br</a>{' '}
               para que possamos investigar o ocorrido. <strong>Sua identidade será preservada.</strong>
             </p>
 
@@ -125,11 +125,11 @@ export default function CodeOfEthicsPage() {
               <li>
                 Nos termos da LGPD, o titular poderá ter acesso a seus dados sob nossa custódia, mediante solicitação
                 por escrito ao nosso DPO no e-mail{' '}
-                <a href="mailto:dpo@aquainvest.com.br">dpo@aquainvest.com.br</a>.
+                <a href="mailto:dpo@sejaacqua.com.br">dpo@sejaacqua.com.br</a>.
               </li>
             </ol>
 
-            <h2>C. Deveres em relação à Aqua</h2>
+            <h2>C. Deveres em relação à Acqua</h2>
             <h3>1. Transparência</h3>
             <p>
               Os Credenciados devem agir com total transparência, informando sempre as situações vivenciadas, quando
@@ -139,12 +139,12 @@ export default function CodeOfEthicsPage() {
             <h3>2. Ética</h3>
             <p>
               Está expressamente proibida a prática da oferta, solicitação ou aceite de presentes, remunerações,
-              pagamentos ou quaisquer benefícios indevidos. Essas condutas não são aceitas na cultura da Aqua, pois
+              pagamentos ou quaisquer benefícios indevidos. Essas condutas não são aceitas na cultura da Acqua, pois
               ferem nossos princípios de ética, justiça e respeito.
             </p>
             <p>
               Caso perceba ou suspeite de alguma conduta inadequada, nos avise no e-mail{' '}
-              <a href="mailto:compliance@aquainvest.com.br">compliance@aquainvest.com.br</a>. Sua identidade será
+              <a href="mailto:compliance@sejaacqua.com.br">compliance@sejaacqua.com.br</a>. Sua identidade será
               preservada.
             </p>
 
@@ -153,26 +153,26 @@ export default function CodeOfEthicsPage() {
             <p>
               Caso identifique qualquer possível conflito de interesse, o Credenciado deverá comunicar imediatamente
               a Diretoria de Compliance, para que a questão seja avaliada, esclarecida e tenha o correto
-              direcionamento, evitando qualquer problema ou risco que possa ameaçar a Aqua, seus clientes e os
+              direcionamento, evitando qualquer problema ou risco que possa ameaçar a Acqua, seus clientes e os
               demais entes que com ela transacionam.
             </p>
             <h3>2. Informações privilegiadas</h3>
             <p>
               Os Credenciados estão proibidos de utilizar em benefício próprio informações privilegiadas a que
-              possam ter acesso em função da sua atuação na Aqua.
+              possam ter acesso em função da sua atuação na Acqua.
             </p>
 
             <h2>E. Comunicação com o mercado</h2>
-            <h3>1. Informações Aqua</h3>
+            <h3>1. Informações Acqua</h3>
             <p>
-              Nossos Credenciados não estão autorizados a efetuar pronunciamentos e informações em nome da Aqua.
+              Nossos Credenciados não estão autorizados a efetuar pronunciamentos e informações em nome da Acqua.
               Não estão autorizados a emitir correspondências, participar de entrevistas, prestar declarações ou
               afirmações em nosso nome. Essa função compete somente aos membros da Diretoria da instituição.
             </p>
             <h3>2. Propriedade intelectual</h3>
             <p>
-              Toda concepção desenvolvida durante a atividade da Aqua, envolvendo o material e demais documentos
-              gerados, deve ser armazenada na infraestrutura de rede corporativa da Aqua e será de exclusiva e
+              Toda concepção desenvolvida durante a atividade da Acqua, envolvendo o material e demais documentos
+              gerados, deve ser armazenada na infraestrutura de rede corporativa da Acqua e será de exclusiva e
               total propriedade da mesma. O uso ou compartilhamento desses materiais sem expressa autorização da
               Diretoria constitui ilicitude, inclusive sobre a propriedade intelectual envolvida.
             </p>
@@ -188,29 +188,29 @@ export default function CodeOfEthicsPage() {
             </p>
             <h3>2. Meritocracia</h3>
             <p>
-              A Aqua tem por princípio tratar seus Credenciados de maneira imparcial e justa, onde todos possuem
+              A Acqua tem por princípio tratar seus Credenciados de maneira imparcial e justa, onde todos possuem
               oportunidade para Empreender, aprendendo a aprender. Em todas as relações, nossas decisões são
               baseadas em fatos, evitando-se influência de opiniões pessoais, interesses ou sentimentos, eliminando
               qualquer possibilidade de favorecimento.
             </p>
             <p>
               Caso perceba ou suspeite de alguma conduta inadequada, nos avise no e-mail{' '}
-              <a href="mailto:compliance@aquainvest.com.br">compliance@aquainvest.com.br</a>. Sua identidade será
+              <a href="mailto:compliance@sejaacqua.com.br">compliance@sejaacqua.com.br</a>. Sua identidade será
               preservada.
             </p>
 
             <h2>G. Vigência</h2>
-            <p>Este Código entra em vigor a partir da sua publicação, estando disponível no site da Aqua.</p>
+            <p>Este Código entra em vigor a partir da sua publicação, estando disponível no site da Acqua.</p>
             <p>
               As ações e resultados da presente Política deverão ser acompanhados de forma contínua pelo Diretor de
               Compliance, que terá o papel de propor, para a avaliação e aprovação da Diretoria Executiva, ajustes,
-              revisões, melhorias e correções à mesma (i) sempre que houver mudança legislativa aplicável à Aqua
-              que afete suas disposições; (ii) sempre que houver interesse da Aqua na mudança proposta; e (iii)
+              revisões, melhorias e correções à mesma (i) sempre que houver mudança legislativa aplicável à Acqua
+              que afete suas disposições; (ii) sempre que houver interesse da Acqua na mudança proposta; e (iii)
               anualmente a contar da Data de Implementação.
             </p>
             <p>
               Fale com o Compliance:{' '}
-              <a href="mailto:compliance@aquainvest.com.br">compliance@aquainvest.com.br</a>
+              <a href="mailto:compliance@sejaacqua.com.br">compliance@sejaacqua.com.br</a>
             </p>
           </article>
         </div>

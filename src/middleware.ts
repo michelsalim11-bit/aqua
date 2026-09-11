@@ -2,11 +2,11 @@ import { NextResponse, type NextRequest } from 'next/server';
 
 /**
  * Roteamento por host:
- * - lp.aquainvest.com.br  → serve a rota /lp (layout próprio, sem
+ * - lp.sejaacqua.com.br  → serve a rota /lp (layout próprio, sem
  *   header/footer do site e com tema escopado em .lp-root).
- * - aquainvest.com.br     → a LP não existe (some do site).
+ * - sejaacqua.com.br     → a LP não existe (some do site).
  */
-const LP_HOST = 'lp.aquainvest.com.br';
+const LP_HOST = 'lp.sejaacqua.com.br';
 
 export function middleware(req: NextRequest) {
   const host = (req.headers.get('host') ?? '').toLowerCase();
