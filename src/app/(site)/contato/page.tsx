@@ -3,7 +3,7 @@ import { ContatoForm } from '@/components/ContatoForm';
 
 const TITLE = 'Contato';
 const DESCRIPTION =
-  'Fale com a Acqua. Nossa equipe está pronta para ajudar você a conhecer a plataforma e esclarecer dúvidas.';
+  'Fale com a Seja Acqua. Nossa equipe está pronta para ajudar você a conhecer a plataforma e esclarecer dúvidas.';
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -25,7 +25,7 @@ export default function ContatoPage() {
           <span className="eyebrow">Contato</span>
           <h1>Vamos conversar.</h1>
           <p>
-            Se você deseja saber mais sobre a Acqua, conhecer a plataforma ou esclarecer dúvidas,
+            Se você deseja saber mais sobre a Seja Acqua, conhecer a plataforma ou esclarecer dúvidas,
             nossa equipe está pronta para ajudar.
           </p>
         </div>

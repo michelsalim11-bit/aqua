@@ -6,7 +6,7 @@ import './globals.css';
 const SITE_URL = 'https://sejaacqua.com.br';
 const SITE_NAME = 'Seja Acqua';
 const DESCRIPTION =
-  'A Acqua aproxima você de um mercado que contribui para a circulação de recursos na economia, conectando pessoas a oportunidades ligadas à atividade empresarial e ao crescimento econômico.';
+  'Seja Acqua aproxima você de um mercado que contribui para a circulação de recursos na economia, conectando pessoas a oportunidades ligadas à atividade empresarial e ao crescimento econômico.';
 
 const bricolage = Space_Grotesk({
   subsets: ['latin'],
@@ -49,7 +49,6 @@ export const metadata: Metadata = {
   publisher: SITE_NAME,
   keywords: [
     'Seja Acqua',
-    'Acqua',
     'economia real',
     'liquidez empresarial',
     'capital de giro',

@@ -74,10 +74,10 @@ export default function PrivacyPolicyPage() {
               <li>Considerações Gerais</li>
               <li>Quais dados de acesso são coletados pelos nossos sites?</li>
               <li>Acesso a serviços de terceiros</li>
-              <li>Quais informações são coletadas para criação de conta na Acqua?</li>
+              <li>Quais informações são coletadas para criação de conta na Seja Acqua?</li>
               <li>Quais informações são coletadas no formulário de cadastro do site?</li>
               <li>Quais informações são coletadas no formulário de contato do site?</li>
-              <li>Por que a Acqua coleta e utiliza seus dados pessoais?</li>
+              <li>Por que a Seja Acqua coleta e utiliza seus dados pessoais?</li>
               <li>Compartilhamento de dados pessoais</li>
               <li>Transferência internacional dos dados</li>
               <li>Segurança e privacidade dos dados pessoais</li>
@@ -90,7 +90,7 @@ export default function PrivacyPolicyPage() {
 
             <h3>1. Considerações Gerais</h3>
             <p>
-              A Acqua respeita a privacidade de todos os titulares de dados pessoais, estando comprometida a tomar
+              Seja Acqua respeita a privacidade de todos os titulares de dados pessoais, estando comprometida a tomar
               todas as medidas possíveis para assegurar de maneira razoável a proteção dos dados pessoais coletados.
             </p>
             <p>Todas as informações são tratadas de acordo com as leis e regulamentações de proteção de dados aplicáveis.</p>
@@ -101,17 +101,17 @@ export default function PrivacyPolicyPage() {
               da privacidade de dados pessoais algo muito sério, por isso monitoramos constantemente e prevemos
               medidas disciplinares apropriadas para eventuais descumprimentos.
             </p>
-            <p>A Acqua pode utilizar diferentes formas para coletar dados pessoais, tais como:</p>
+            <p>Seja Acqua pode utilizar diferentes formas para coletar dados pessoais, tais como:</p>
             <ul>
               <li>
                 Fornecimento por meio do preenchimento de formulários, questionários, e-mail, sites, correio,
                 aplicativos, telefone, contratos, por meio da entrega de documentos pessoais, em situações que
                 incluem, por exemplo, você:
                 <ul>
-                  <li>tem ou pretende ter relação de trabalho ou profissional com a Acqua;</li>
+                  <li>tem ou pretende ter relação de trabalho ou profissional com a Seja Acqua;</li>
                   <li>fornece ou pretende nos fornecer produtos e/ou serviços;</li>
-                  <li>solicita produtos ou serviços da Acqua;</li>
-                  <li>contrata serviços por meio da Acqua;</li>
+                  <li>solicita produtos ou serviços da Seja Acqua;</li>
+                  <li>contrata serviços por meio da Seja Acqua;</li>
                   <li>solicita o envio de materiais de marketing ou institucionais;</li>
                   <li>participa de promoção ou pesquisa;</li>
                   <li>nos contata para transmitir algum feedback;</li>
@@ -128,7 +128,7 @@ export default function PrivacyPolicyPage() {
               ações do usuário no site, nos termos do Marco Civil da Internet.
             </p>
             <p>
-              Informações coletadas de usuários ao utilizar os aplicativos da Acqua incluem, entre outras, o modelo
+              Informações coletadas de usuários ao utilizar os aplicativos da Seja Acqua incluem, entre outras, o modelo
               do dispositivo móvel e o sistema operacional utilizado para o acesso; endereço do protocolo de Internet
               (IP); data e hora do acesso, versão do aplicativo; provedor de conexão do usuário; localização do
               usuário (quando autorizado e habilitado pelo usuário); e as ações do usuário nos aplicativos.
@@ -141,11 +141,11 @@ export default function PrivacyPolicyPage() {
             <p>
               Para uma melhor experiência, caso você venha a utilizar serviços de terceiros integrados, poderá ser
               solicitado que você realize autenticação por meio de uma conta externa. Essa autenticação é opcional e
-              utilizada apenas para a função correspondente. A Acqua não coleta, compartilha ou armazena informações
+              utilizada apenas para a função correspondente. Seja Acqua não coleta, compartilha ou armazena informações
               associadas a essas contas além do necessário para a sessão de uso.
             </p>
 
-            <h3>4. Quais informações são coletadas para criação de conta na Acqua?</h3>
+            <h3>4. Quais informações são coletadas para criação de conta na Seja Acqua?</h3>
             <p>Para possibilitar o cadastro, alguns dados podem ser solicitados, como por exemplo:</p>
             <ul>
               <li>Nome completo, e-mail, CPF, data de nascimento, telefone celular;</li>
@@ -163,7 +163,7 @@ export default function PrivacyPolicyPage() {
             </ul>
             <p>
               Em situações específicas, podemos solicitar, ainda, o envio de foto de rosto junto a um documento de
-              identificação para seguir com o processo de cadastramento na Acqua.
+              identificação para seguir com o processo de cadastramento na Seja Acqua.
             </p>
 
             <h3>5. Quais informações são coletadas no formulário de cadastro do site?</h3>
@@ -172,11 +172,11 @@ export default function PrivacyPolicyPage() {
             <h3>6. Quais informações são coletadas no formulário de contato do site?</h3>
             <p>Nome completo, telefone e e-mail.</p>
 
-            <h3>7. Por que a Acqua coleta e utiliza seus dados pessoais?</h3>
+            <h3>7. Por que a Seja Acqua coleta e utiliza seus dados pessoais?</h3>
             <p>Podemos utilizar a sua informação pessoal para as seguintes finalidades:</p>
             <ol>
               <li>
-                <strong>Agregar segurança na criação da sua conta na plataforma da Acqua</strong>
+                <strong>Agregar segurança na criação da sua conta na plataforma da Seja Acqua</strong>
                 <p>
                   Necessitamos verificar a sua identidade de forma a validá-lo como cliente, incluindo verificações
                   de crédito ou identidade por entidades terceiras, em concordância com a política “Conheça o seu
@@ -251,7 +251,7 @@ export default function PrivacyPolicyPage() {
 
             <h3>8. Compartilhamento de dados pessoais</h3>
             <p>
-              Observados os critérios definidos nesta Política, a Acqua não divulgará dados pessoais dos seus
+              Observados os critérios definidos nesta Política, a Seja Acqua não divulgará dados pessoais dos seus
               clientes a terceiros, exceto:
             </p>
             <ul>
@@ -263,7 +263,7 @@ export default function PrivacyPolicyPage() {
             </ul>
             <p>Podemos eventualmente divulgar sua informação pessoal a:</p>
             <ul>
-              <li>Demais empresas do ecossistema em que a Acqua participe, nos limites das finalidades estabelecidas;</li>
+              <li>Demais empresas do ecossistema em que a Seja Acqua participe, nos limites das finalidades estabelecidas;</li>
               <li>Entidades terceiras credenciadas prestadoras de serviços contratados (comerciais, administrativos, financeiros, legais, segurança, auditorias, pesquisa, entre outros);</li>
               <li>Partes empresariais, fornecedores de crédito, tribunais, órgãos controladores e autoridades reguladoras;</li>
               <li>Prestadores de serviços de pagamento e instituições bancárias, na geração e controle de pagamentos;</li>
@@ -272,14 +272,14 @@ export default function PrivacyPolicyPage() {
 
             <h3>9. Transferência internacional dos dados</h3>
             <p>
-              A Acqua trata as suas informações pessoais em território nacional e em países que possuem legislações
+              Seja Acqua trata as suas informações pessoais em território nacional e em países que possuem legislações
               semelhantes e equivalentes. Mantemos cláusulas específicas para assegurar o correto tratamento,
               alinhadas com as leis e regulamentações brasileiras.
             </p>
 
             <h3>10. Segurança e privacidade dos dados pessoais</h3>
             <p>
-              A Acqua tem como compromisso zelar pelas informações de clientes e demais titulares de dados,
+              Seja Acqua tem como compromisso zelar pelas informações de clientes e demais titulares de dados,
               utilizando medidas que garantam a proteção, manutenção da privacidade, integridade, disponibilidade e
               confidencialidade dos dados pessoais tratados em nosso ambiente. Também exigimos que nossos
               fornecedores protejam suas informações contra acesso, uso e divulgação não autorizados.
@@ -287,15 +287,15 @@ export default function PrivacyPolicyPage() {
 
             <h3>11. Armazenamento e período de retenção</h3>
             <p>
-              A Acqua deverá manter as suas informações pessoais durante o tempo necessário para cumprir com os fins
+              Seja Acqua deverá manter as suas informações pessoais durante o tempo necessário para cumprir com os fins
               para os quais as informações devem ser retidas, conforme as determinações regulatórias. Caso deseje
-              que a Acqua não utilize mais os seus dados pessoais, encaminhe um e-mail para{' '}
+              que a Seja Acqua não utilize mais os seus dados pessoais, encaminhe um e-mail para{' '}
               <a href="mailto:dpo@sejaacqua.com.br">dpo@sejaacqua.com.br</a>.
             </p>
 
             <h3>12. Consultar, alterar e cancelar o tratamento dos seus dados</h3>
             <p>
-              Caso seja cliente da Acqua e deseje consultar, alterar ou solicitar o cancelamento do tratamento dos
+              Caso seja cliente da Seja Acqua e deseje consultar, alterar ou solicitar o cancelamento do tratamento dos
               seus dados pessoais, acesse a área logada do site ou encaminhe um e-mail para{' '}
               <a href="mailto:dpo@sejaacqua.com.br">dpo@sejaacqua.com.br</a>. Caso não seja cliente, encaminhe um
               e-mail para{' '}
@@ -312,7 +312,7 @@ export default function PrivacyPolicyPage() {
 
             <h3>14. Aviso Legal</h3>
             <p>
-              A Acqua não é responsável pelo uso indevido ou perda dos dados pessoais a que não tem acesso ou
+              Seja Acqua não é responsável pelo uso indevido ou perda dos dados pessoais a que não tem acesso ou
               controle. Não forneça a estranhos suas credenciais de acesso, pois as mesmas poderão ser usadas de
               forma ilegal e não autorizada para acesso das suas informações.
             </p>
@@ -322,8 +322,8 @@ export default function PrivacyPolicyPage() {
             <p>
               As ações e resultados da presente Política deverão ser acompanhados de forma contínua pelo DPO, que
               terá o papel de propor, para a avaliação e aprovação da Diretoria Executiva, ajustes, revisões,
-              melhorias e correções à mesma (i) sempre que houver mudança legislativa aplicável à Acqua que afete
-              suas disposições; (ii) sempre que houver interesse da Acqua na mudança proposta; e (iii) anualmente
+              melhorias e correções à mesma (i) sempre que houver mudança legislativa aplicável à Seja Acqua que afete
+              suas disposições; (ii) sempre que houver interesse da Seja Acqua na mudança proposta; e (iii) anualmente
               a contar da Data de Implementação.
             </p>
           </article>

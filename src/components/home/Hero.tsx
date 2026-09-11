@@ -40,7 +40,7 @@ export function Hero({ whatsapp }: HeroProps) {
           </h1>
 
           <p className="mt-6 max-w-md text-base leading-relaxed text-acqua-blue/70 md:text-lg">
-            A Acqua é uma plataforma de tecnologia que aproxima você de oportunidades ligadas ao
+            Seja Acqua é uma plataforma de tecnologia que aproxima você de oportunidades ligadas ao
             mercado de crédito e recebíveis. Aqui, você conhece as condições, entende como cada
             possibilidade funciona e encontra as informações necessárias para decidir o próximo
             passo.
@@ -51,7 +51,7 @@ export function Hero({ whatsapp }: HeroProps) {
               href="#quem"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-acqua-blue px-7 py-3.5 text-sm font-semibold text-acqua-cream shadow-sm transition-colors hover:bg-[#244373]"
             >
-              Entenda como a Acqua funciona
+              Entenda como a Seja Acqua funciona
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </a>
             <a

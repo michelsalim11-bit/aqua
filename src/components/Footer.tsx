@@ -50,7 +50,7 @@ export function Footer() {
             <h4>Institucional</h4>
             <ul>
               <li>
-                <Link href="/sobre">A Acqua</Link>
+                <Link href="/sobre">Seja Acqua</Link>
               </li>
               <li>
                 <Link href="/#mercado">O mercado</Link>
@@ -75,7 +75,7 @@ export function Footer() {
             <Link href="/codigo-de-etica-e-conduta">Código de Ética e Conduta</Link>
           </div>
           <p style={{ marginTop: '1.4rem' }}>
-            A Acqua é uma plataforma de tecnologia que conecta investidores a
+            Seja Acqua é uma plataforma de tecnologia que conecta investidores a
             oportunidades ligadas à economia real. Este conteúdo possui caráter
             exclusivamente informativo e não constitui oferta, recomendação ou
             aconselhamento. Simulações e projeções, quando apresentadas, não

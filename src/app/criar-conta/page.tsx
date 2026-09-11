@@ -14,7 +14,7 @@ export default function CriarContaPage() {
     <AuthShell
       heading={
         <>
-          Sua conta <em className="not-italic text-acqua-cream">Acqua</em> em menos de 2 minutos.
+          Sua conta <em className="not-italic text-acqua-cream">Seja Acqua</em> em menos de 2 minutos.
         </>
       }
       subheading="Abra sua conta e acesse as melhores oportunidades do mercado de crédito."

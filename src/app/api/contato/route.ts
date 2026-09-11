@@ -9,7 +9,7 @@ export const dynamic = 'force-dynamic';
 // Leads do site → Google Sheets (interim até a integração com o HubSpot).
 // SHEETS_SA_KEY é o JSON da service account em base64 (evita problemas com
 // \n da private key em env vars); LEADS_SHEET_ID é o id da planilha
-// "Leads Acqua Site" (aba "Leads").
+// "Leads Seja Acqua Site" (aba "Leads").
 const SHEETS_SA_KEY = process.env.SHEETS_SA_KEY;
 const LEADS_SHEET_ID = process.env.LEADS_SHEET_ID;
 

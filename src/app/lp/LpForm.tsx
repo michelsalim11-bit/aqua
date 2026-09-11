@@ -81,7 +81,7 @@ export function LpForm() {
         </div>
         <h3 className="text-2xl font-extrabold">Recebemos o seu contato.</h3>
         <p className="max-w-xs text-[15px] leading-relaxed text-[var(--muted)]">
-          Um especialista da Acqua vai falar com você em breve. Enquanto isso, o movimento continua.
+          Um especialista da Seja Acqua vai falar com você em breve. Enquanto isso, o movimento continua.
         </p>
       </div>
     );
@@ -95,7 +95,7 @@ export function LpForm() {
     >
       <h3 className="text-xl font-extrabold tracking-tight">Acesse as oportunidades</h3>
       <p className="mt-1.5 text-sm leading-relaxed text-[var(--muted)]">
-        Preencha e fale com um especialista da Acqua. Sem custo e sem compromisso.
+        Preencha e fale com um especialista da Seja Acqua. Sem custo e sem compromisso.
       </p>
       <div className="mt-6 space-y-4">
         <div>
@@ -160,7 +160,7 @@ export function LpForm() {
         {status === 'loading' ? 'Enviando…' : 'Quero falar com um especialista'}
       </button>
       <p className="mt-4 text-center text-xs leading-relaxed text-[var(--faint)]">
-        Ao continuar, você concorda em ser contatado pela Acqua. Seus dados estão protegidos.
+        Ao continuar, você concorda em ser contatado pela Seja Acqua. Seus dados estão protegidos.
       </p>
     </form>
   );

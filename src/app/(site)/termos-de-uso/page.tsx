@@ -31,7 +31,7 @@ export default function TermsOfUsePage() {
             <h2>1. Objeto</h2>
             <p>
               Este Termo de Uso tem por objeto definir as regras a serem seguidas pelos visitantes do website da{' '}
-              <strong>Seja Acqua</strong> (“Acqua” ou “Empresa”), para acesso e uso do website
+              <strong>Seja Acqua</strong> (“Empresa”), para acesso e uso do website
               (“Plataforma”), sem prejuízo da aplicação da legislação vigente (“Termos de Uso”).
             </p>
             <p>
@@ -41,23 +41,23 @@ export default function TermsOfUsePage() {
 
             <h2>2. Plataforma</h2>
             <p>
-              A Acqua atua preponderantemente na intermediação de negócios, consultoria técnica, além de realizar a
+              Seja Acqua atua preponderantemente na intermediação de negócios, consultoria técnica, além de realizar a
               prestação de serviços a instituições financeiras, na qualidade de correspondente bancário.
             </p>
             <p>
-              Todo material publicado no website da Acqua é publicado para fins de informação institucional e de
-              divulgação dos seus serviços. A Acqua tem como objetivo oferecer um serviço especializado auxiliando
+              Todo material publicado no website da Seja Acqua é publicado para fins de informação institucional e de
+              divulgação dos seus serviços. Seja Acqua tem como objetivo oferecer um serviço especializado auxiliando
               nossos clientes a tomar as melhores decisões relacionadas às suas contratações, sempre de acordo com seus
               objetivos e seu perfil.
             </p>
             <p>
               As informações, serviços e produtos oferecidos no site referem-se a esta data, podendo ser alterados,
-              cancelados ou suspensos a qualquer tempo e sem aviso prévio, a critério exclusivo da Acqua.
+              cancelados ou suspensos a qualquer tempo e sem aviso prévio, a critério exclusivo da Seja Acqua.
             </p>
 
             <h3>Links de terceiros</h3>
             <p>
-              Este Termo de Uso refere-se apenas ao website da Acqua e esta não é responsável pelas práticas de
+              Este Termo de Uso refere-se apenas ao website da Seja Acqua e esta não é responsável pelas práticas de
               privacidade ou pelo conteúdo de terceiros. Se qualquer link deste site redirecionar para sites de
               terceiros, nestes sites eles terão seus próprios termos de uso e avisos de privacidade, de modo que
               você precisará verificar esses documentos antes de enviar quaisquer dados pessoais aos mesmos sites
@@ -68,7 +68,7 @@ export default function TermsOfUsePage() {
             <p>
               Para acesso e uso da Plataforma, qualquer interessado, incluindo os prestadores de serviços da Empresa
               (denominados para fins deste Termo de Uso como “Usuários”), deverão preencher o formulário de Cadastro
-              do site da Acqua com Nome Completo, Data de Nascimento, Telefone, CPF, E-mail e criar uma senha.
+              do site da Seja Acqua com Nome Completo, Data de Nascimento, Telefone, CPF, E-mail e criar uma senha.
             </p>
             <p>
               Ao se cadastrar na Plataforma, o Usuário automaticamente concorda com este Termo de Uso e com a
@@ -156,9 +156,9 @@ export default function TermsOfUsePage() {
             <p>Esta Política está em vigor desde a sua publicação no site (“Data de Implementação”).</p>
             <p>
               As ações e resultados da presente Política deverão ser acompanhados de forma contínua pelo DPO e pelo
-              Comitê de Privacidade da Acqua, que terá o papel de propor, para a avaliação e aprovação do Comitê
+              Comitê de Privacidade da Seja Acqua, que terá o papel de propor, para a avaliação e aprovação do Comitê
               Executivo, ajustes, revisões, melhorias e correções à mesma (i) sempre que houver mudança legislativa
-              aplicável à Acqua que afete suas disposições; (ii) sempre que houver interesse da Acqua na mudança
+              aplicável à Seja Acqua que afete suas disposições; (ii) sempre que houver interesse da Seja Acqua na mudança
               proposta; e (iii) anualmente a contar da Data de Implementação.
             </p>
 

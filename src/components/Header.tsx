@@ -6,7 +6,7 @@ const LOGIN_HREF = '/login';
 const CADASTRO_HREF = '/criar-conta';
 
 const navLinks = [
-  { href: '/#quem', label: 'Quem é a Acqua' },
+  { href: '/#quem', label: 'Conheça a Seja Acqua' },
   { href: '/#mvv', label: 'Missão e valores' },
   { href: '/#mercado', label: 'O mercado' },
   { href: '/#produto', label: 'Produto' },

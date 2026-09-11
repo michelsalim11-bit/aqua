@@ -17,7 +17,7 @@ const mantri = localFont({
 
 const TITLE = 'Seja Acqua — Você pode mais';
 const DESCRIPTION =
-  'A Acqua conecta você a oportunidades ligadas à economia real. Acesso a um mercado historicamente restrito a bancos, fundos e grandes instituições.';
+  'Seja Acqua conecta você a oportunidades ligadas à economia real. Acesso a um mercado historicamente restrito a bancos, fundos e grandes instituições.';
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },

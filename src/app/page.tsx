@@ -12,7 +12,7 @@ const CADASTRO_HREF = '/criar-conta';
 const WHATSAPP = 'https://wa.me/5511991948472';
 
 const NAV_LINKS = [
-  { href: '#quem', label: 'Quem é a Acqua' },
+  { href: '#quem', label: 'Conheça a Seja Acqua' },
   { href: '#mvv', label: 'Missão e valores' },
   { href: '#mercado', label: 'O mercado' },
   { href: '#produto', label: 'Produto' },
@@ -21,7 +21,7 @@ const NAV_LINKS = [
 
 const TITLE = 'Seja Acqua · Acesso à economia real';
 const DESCRIPTION =
-  'A Acqua é uma plataforma de tecnologia que aproxima você de oportunidades ligadas ao mercado de crédito e recebíveis.';
+  'Seja Acqua é uma plataforma de tecnologia que aproxima você de oportunidades ligadas ao mercado de crédito e recebíveis.';
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -106,7 +106,7 @@ function HomeFooter() {
             <h4>Institucional</h4>
             <ul>
               <li>
-                <a href="#quem">Quem é a Acqua</a>
+                <a href="#quem">Conheça a Seja Acqua</a>
               </li>
               <li>
                 <a href="#mvv">Missão, visão e valores</a>
@@ -182,10 +182,10 @@ export default function HomePage() {
           <div className="feature__body reveal">
             <span className="trilha-tag">
               <span className="n">1</span>
-              <span className="lbl">Quem é a Acqua</span>
+              <span className="lbl">Conheça a Seja Acqua</span>
             </span>
             <h2 className="lead-h">
-              A Acqua é uma plataforma de tecnologia <span className="hl">conectada à economia real.</span>
+              Seja Acqua é uma plataforma de tecnologia <span className="hl">conectada à economia real.</span>
             </h2>
             <p className="lead-sub">
               Um ambiente criado para aproximar pessoas de oportunidades, organizar informações e
@@ -193,7 +193,7 @@ export default function HomePage() {
             </p>
             <div className="prose" style={{ marginTop: '1.4rem' }}>
               <p>
-                A Acqua nasceu para tornar mais simples o acesso a mercados que, por muito tempo,
+                Seja Acqua nasceu para tornar mais simples o acesso a mercados que, por muito tempo,
                 ficaram distantes da maioria das pessoas.
               </p>
               <p>
@@ -214,7 +214,7 @@ export default function HomePage() {
           <span id="principios" aria-hidden="true" />
           <div className="wrap">
             <div className="section-head reveal">
-              <h2 className="lead-h">Como a Acqua pensa, trabalha e se relaciona.</h2>
+              <h2 className="lead-h">Como a Seja Acqua pensa, trabalha e se relaciona.</h2>
             </div>
             <div className="mv-grid" style={{ marginBottom: 'clamp(1.8rem,4vw,3rem)' }}>
               <article className="mv reveal">
@@ -259,7 +259,7 @@ export default function HomePage() {
               <article className="pcard reveal d2">
                 <div className="pcard__img">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/v2/princ-compreensao.jpg" alt="Cliente conversando com a equipe da Acqua" loading="lazy" />
+                  <img src="/v2/princ-compreensao.jpg" alt="Cliente conversando com a equipe da Seja Acqua" loading="lazy" />
                 </div>
                 <div className="pcard__body">
                   <h3>Proximidade</h3>
@@ -386,7 +386,7 @@ export default function HomePage() {
               </span>
               <h2 className="lead-h">Conheça antes de decidir.</h2>
               <p>
-                Na plataforma Acqua, você encontra oportunidades ligadas a operações de crédito e
+                Na plataforma Seja Acqua, você encontra oportunidades ligadas a operações de crédito e
                 recebíveis. Cada possibilidade é apresentada com informações sobre origem,
                 condições, prazos, remuneração e riscos.
               </p>
@@ -450,19 +450,19 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Como a Acqua participa */}
+        {/* Como a Seja Acqua participa */}
         <section className="feature feature--rev">
           <div className="feature__media reveal">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/v2/produto-participa.jpg" alt="Cliente consultando as oportunidades na plataforma Acqua" loading="lazy" />
+            <img src="/v2/produto-participa.jpg" alt="Cliente consultando as oportunidades na plataforma Seja Acqua" loading="lazy" />
           </div>
           <div className="feature__body reveal">
-            <span className="eyebrow">Como a Acqua participa</span>
+            <span className="eyebrow">Como a Seja Acqua participa</span>
             <h2 className="lead-h">
               Você conhece primeiro. <span className="hl">Decide depois.</span>
             </h2>
             <div className="prose" style={{ marginTop: '1.4rem' }}>
-              <p>A Acqua organiza as informações e apresenta as possibilidades disponíveis em um único ambiente.</p>
+              <p>Seja Acqua organiza as informações e apresenta as possibilidades disponíveis em um único ambiente.</p>
               <p>
                 Você consulta as condições, entende como a operação funciona e avalia cada
                 oportunidade com mais informação.
@@ -474,7 +474,12 @@ export default function HomePage() {
 
         {/* ===================== 5 · CADASTRE-SE ===================== */}
         <section className="band imgband final" id="cadastro">
-          <div className="bg" aria-hidden="true" />
+          <div className="bg bg-video" aria-hidden="true">
+            <video autoPlay muted loop playsInline>
+              <source src="/videos/cta-tapestry.webm" type="video/webm" />
+            </video>
+            <div className="bg-video-tint" />
+          </div>
           <div className="wrap">
             <h2 className="reveal">Conheça a plataforma.</h2>
             <p className="reveal">
@@ -501,7 +506,7 @@ export default function HomePage() {
                 maxWidth: '54ch',
               }}
             >
-              Se você deseja saber mais sobre a Acqua, conhecer a plataforma ou esclarecer dúvidas,
+              Se você deseja saber mais sobre a Seja Acqua, conhecer a plataforma ou esclarecer dúvidas,
               nossa equipe está pronta para ajudar.
             </p>
             <div className="cta-row reveal" style={{ justifyContent: 'center', marginTop: '1.8rem' }}>
@@ -533,9 +538,9 @@ export default function HomePage() {
             <p>
               As informações apresentadas possuem caráter exclusivamente institucional e
               informativo e não constituem oferta, recomendação ou aconselhamento financeiro. As
-              possibilidades eventualmente disponibilizadas pela Acqua estão sujeitas a critérios,
+              possibilidades eventualmente disponibilizadas pela Seja Acqua estão sujeitas a critérios,
               análise, disponibilidade, condições específicas e riscos. O cadastro ou o contato com
-              a Acqua não representa aprovação, contratação, garantia de acesso, remuneração ou
+              a Seja Acqua não representa aprovação, contratação, garantia de acesso, remuneração ou
               resultado.
             </p>
           </div>
