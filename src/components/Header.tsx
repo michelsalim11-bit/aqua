@@ -2,7 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { MobileMenu } from '@/components/MobileMenu';
 
-const APP_LOGIN = 'https://app.sejaacqua.com.br/sign-in';
+const LOGIN_HREF = '/login';
+const CADASTRO_HREF = '/criar-conta';
 
 const navLinks = [
   { href: '/#quem', label: 'Quem é a Acqua' },
@@ -29,13 +30,13 @@ export function Header() {
         </nav>
 
         <div className="nav-actions">
-          <a className="enter" href={APP_LOGIN}>
+          <Link className="enter" href={LOGIN_HREF}>
             Login
-          </a>
-          <Link className="btn btn-primary" href="/#cadastro">
+          </Link>
+          <Link className="btn btn-primary" href={CADASTRO_HREF}>
             Faça seu cadastro
           </Link>
-          <MobileMenu links={navLinks} loginHref={APP_LOGIN} />
+          <MobileMenu links={navLinks} loginHref={LOGIN_HREF} />
         </div>
       </div>
     </header>

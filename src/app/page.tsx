@@ -7,7 +7,8 @@ import { CadastroForm } from '@/components/home/CadastroForm';
 import { Hero } from '@/components/home/Hero';
 import './home-v2.css';
 
-const APP_LOGIN = 'https://app.sejaacqua.com.br/sign-in';
+const LOGIN_HREF = '/login';
+const CADASTRO_HREF = '/criar-conta';
 const WHATSAPP = 'https://wa.me/5511991948472';
 
 const NAV_LINKS = [
@@ -55,13 +56,13 @@ function HomeHeader() {
           )}
         </nav>
         <div className="nav-actions">
-          <a className="enter" href={APP_LOGIN}>
+          <Link className="enter" href={LOGIN_HREF}>
             Login
-          </a>
-          <a className="btn btn-primary" href="#cadastro">
+          </Link>
+          <Link className="btn btn-primary" href={CADASTRO_HREF}>
             Faça seu cadastro
-          </a>
-          <MobileMenu links={NAV_LINKS} loginHref={APP_LOGIN} />
+          </Link>
+          <MobileMenu links={NAV_LINKS} loginHref={LOGIN_HREF} />
         </div>
       </div>
     </header>

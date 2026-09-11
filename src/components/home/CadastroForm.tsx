@@ -2,13 +2,14 @@
 
 import { useState } from 'react';
 
+import Link from 'next/link';
 import { isPhoneComplete, maskPhone } from '@/lib/phone';
 
-const APP_LOGIN = 'https://app.sejaacqua.com.br/sign-up';
+const CADASTRO_HREF = '/criar-conta';
 
 /**
  * Form "Tenho interesse" da home (v2): pedido de contato, não cadastro —
- * o cadastro real fica no app (sign-up). Envia para /api/contato
+ * o cadastro completo fica em /criar-conta. Envia para /api/contato
  * (planilha de leads) até a integração com o HubSpot.
  */
 export function CadastroForm() {
@@ -93,9 +94,9 @@ export function CadastroForm() {
           →
         </span>
       </button>
-      <a className="cad-alt" href={APP_LOGIN}>
+      <Link className="cad-alt" href={CADASTRO_HREF}>
         Faça seu cadastro
-      </a>
+      </Link>
     </form>
   );
 }

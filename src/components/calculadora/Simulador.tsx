@@ -1,8 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
-const APP_SIGNUP = 'https://app.sejaacqua.com.br/sign-up';
+const CADASTRO_HREF = '/criar-conta';
 
 const TERMS = [6, 8, 12, 18, 24];
 const EU_M = 0.0135; // 1,35% a.m.
@@ -149,11 +150,9 @@ export function Simulador() {
                   +{pct.toFixed(2).replace('.', ',')}%
                 </span>
               </div>
-              <a
+              <Link
                 className="sim-bar eu"
-                href={APP_SIGNUP}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={CADASTRO_HREF}
                 style={{ height: euBarH }}
                 tabIndex={revealed ? 0 : -1}
                 aria-hidden={!revealed}
@@ -161,7 +160,7 @@ export function Simulador() {
                 <span className="sim-mask-q" aria-hidden="true">
                   ?
                 </span>
-              </a>
+              </Link>
               <div className="sim-bar-name eu-name">
                 <span className="n">Eu</span>
                 <span className="r sim-eu-rate">17,46% a.a.</span>
@@ -200,12 +199,12 @@ export function Simulador() {
       <div className="sim-cta-row">
         {revealed ? (
           <>
-            <a className="btn btn-primary" href={APP_SIGNUP} target="_blank" rel="noopener noreferrer">
+            <Link className="btn btn-primary" href={CADASTRO_HREF}>
               Prosseguir{' '}
               <span className="arr" aria-hidden="true">
                 →
               </span>
-            </a>
+            </Link>
             <span className="sim-cta-note">Grátis · Sem taxas · Cadastro em 2 minutos</span>
             <button type="button" className="sim-reset" onClick={() => setRevealed(false)}>
               ↺ Ocultar e recomeçar
