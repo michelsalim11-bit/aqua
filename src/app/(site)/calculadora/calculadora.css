@@ -233,6 +233,7 @@
 }
 .sim-bar-name .r {
   display: block;
+  font-family: var(--font-mono), ui-monospace, monospace;
   font-size: 11px;
   color: var(--ink-faint);
   margin-top: 3px;
@@ -325,11 +326,12 @@
   max-width: 940px;
 }
 .sim-legal h4 {
+  font-family: var(--font-mono), ui-monospace, monospace;
   font-size: 12px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ink-faint);
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 8px;
 }
 .sim-legal p {

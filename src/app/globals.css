@@ -85,7 +85,8 @@ h3 {
   display: inline-flex;
   align-items: center;
   gap: 0.6em;
-  font-weight: 600;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-weight: 700;
   font-size: var(--step--1);
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -669,12 +670,13 @@ h3 {
   box-shadow: var(--card-shadow);
 }
 .info-card .blk h4 {
+  font-family: var(--font-mono), ui-monospace, monospace;
   font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--ink-faint);
   margin: 0 0 0.4rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .info-card .blk a {
   color: var(--acqua);
@@ -797,12 +799,13 @@ h3 {
   }
 }
 .foot-grid h4 {
+  font-family: var(--font-mono), ui-monospace, monospace;
   font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--ink-faint);
   margin: 0 0 1.1rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .foot-grid ul {
   list-style: none;

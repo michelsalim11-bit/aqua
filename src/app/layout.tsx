@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Bricolage_Grotesque, Hanken_Grotesk } from 'next/font/google';
+import { Space_Grotesk, Hanken_Grotesk, Courier_Prime } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 
@@ -8,9 +8,9 @@ const SITE_NAME = 'Seja Acqua';
 const DESCRIPTION =
   'A Acqua aproxima você de um mercado que contribui para a circulação de recursos na economia, conectando pessoas a oportunidades ligadas à atividade empresarial e ao crescimento econômico.';
 
-const bricolage = Bricolage_Grotesque({
+const bricolage = Space_Grotesk({
   subsets: ['latin'],
-  weight: ['500', '600', '700', '800'],
+  weight: ['500', '600', '700'],
   variable: '--font-bricolage',
   display: 'swap',
 });
@@ -19,6 +19,13 @@ const hanken = Hanken_Grotesk({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-hanken',
+  display: 'swap',
+});
+
+const mono = Courier_Prime({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-mono',
   display: 'swap',
 });
 
@@ -134,7 +141,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" className={`${bricolage.variable} ${hanken.variable}`}>
+    <html lang="pt-BR" className={`${bricolage.variable} ${hanken.variable} ${mono.variable}`}>
       <body>
         {/* Google Tag Manager (noscript) */}
         <noscript>

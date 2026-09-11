@@ -176,7 +176,7 @@ export default function HomePage() {
         <section className="feature feature--rev" id="quem">
           <div className="feature__media reveal">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/v2/biz-sobre.jpg" alt="Profissional brasileiro acessando a plataforma" loading="lazy" />
+            <img src="/v2/biz-sobre.jpg" alt="Mulher sorrindo enquanto acessa a plataforma pelo tablet" loading="lazy" />
           </div>
           <div className="feature__body reveal">
             <span className="trilha-tag">

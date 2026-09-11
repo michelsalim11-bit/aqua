@@ -28,12 +28,12 @@ export function Hero({ whatsapp }: HeroProps) {
           variants={fadeUp}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
-          <span className="inline-flex items-center gap-2 rounded-full border border-acqua-blue/20 bg-white px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-acqua-blue">
+          <span className="inline-flex items-center gap-2 rounded-full border border-acqua-blue/20 bg-white px-4 py-1.5 font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-acqua-blue">
             <ShieldCheck className="h-3.5 w-3.5" aria-hidden="true" />
             Você pode mais
           </span>
 
-          <h1 className="mt-5 max-w-lg text-4xl font-extrabold leading-[1.08] tracking-tight text-acqua-blue md:text-6xl md:leading-[1.05]">
+          <h1 className="mt-5 max-w-lg font-heading text-4xl font-bold leading-[1.08] tracking-tight text-acqua-blue md:text-6xl md:leading-[1.05]">
             Economia real.
             <br />
             Oportunidades reais.
