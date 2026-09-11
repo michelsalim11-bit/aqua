@@ -303,7 +303,7 @@ export default function HomePage() {
         <section className="feature" id="mercado">
           <div className="feature__media reveal">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/v2/biz-mercado.jpg" alt="Empresária da economia real acompanhando a operação do negócio" loading="lazy" />
+            <img src="/v2/biz-mercado.jpg" alt="Pessoas trabalhando em um negócio da economia real" loading="lazy" />
           </div>
           <div className="feature__body reveal">
             <span className="trilha-tag">
@@ -454,7 +454,7 @@ export default function HomePage() {
         <section className="feature feature--rev">
           <div className="feature__media reveal">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/v2/produto-participa.jpg" alt="Cliente consultando as oportunidades na plataforma Seja Acqua" loading="lazy" />
+            <img src="/v2/produto-participa.jpg" alt="Pessoas consultando as oportunidades na plataforma pelo celular" loading="lazy" />
           </div>
           <div className="feature__body reveal">
             <span className="eyebrow">Como a Seja Acqua participa</span>
