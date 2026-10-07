@@ -135,7 +135,7 @@ export default function LandingPage() {
           <div className="absolute inset-0 bg-gradient-to-t from-swiss-navy/80 via-transparent to-transparent" />
         </div>
 
-        <div className="mx-auto flex min-h-[560px] max-w-[1280px] flex-col justify-center px-5 py-20 md:min-h-[720px] md:px-10 md:py-28">
+        <div className="mx-auto flex min-h-[560px] max-w-[1280px] flex-col justify-center px-5 py-24 md:min-h-[720px] md:px-10 md:py-28">
           <span className="font-apoio inline-flex w-fit items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-[12px] font-semibold text-white backdrop-blur">
             <span className="h-1.5 w-1.5 rounded-full bg-swiss-orange" />
             Sistema de antecipação · Seja Acqua
@@ -197,7 +197,7 @@ export default function LandingPage() {
       </section>
 
       {/* ===================== CONHEÇA A SEJA ACQUA ===================== */}
-      <section id="quem" className="bg-swiss-cream-soft px-5 py-20 md:px-10 md:py-28">
+      <section id="quem" className="bg-swiss-cream-soft px-5 py-24 md:px-10 md:py-28">
         <div className="mx-auto max-w-[1280px]">
           <div className="grid gap-10 md:grid-cols-2 md:items-center md:gap-16">
             <h2 className="font-display max-w-[16ch] text-3xl font-extrabold leading-[1.1] tracking-tight text-swiss-navy md:text-5xl">
@@ -233,7 +233,7 @@ export default function LandingPage() {
       </section>
 
       {/* ===================== SUA OPERAÇÃO, SEMPRE EM DIA ===================== */}
-      <section className="bg-swiss-cream-soft px-5 py-20 md:px-10 md:py-28">
+      <section className="bg-swiss-cream-soft px-5 py-24 md:px-10 md:py-28">
         <div className="mx-auto max-w-[1280px]">
           <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end">
             <div>
@@ -282,7 +282,7 @@ export default function LandingPage() {
       </section>
 
       {/* ===================== O MERCADO — foto editorial de fundo ===================== */}
-      <section id="mercado" className="relative isolate overflow-hidden px-5 py-20 text-white md:px-10 md:py-32">
+      <section id="mercado" className="relative isolate overflow-hidden px-5 py-24 text-white md:px-10 md:py-32">
         <div className="absolute inset-0 -z-10">
           <Image
             src="/landing/mercado-foto.jpg"
@@ -291,7 +291,8 @@ export default function LandingPage() {
             className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-swiss-navy-deep/90 to-swiss-orange-muted/80" />
+          <div className="absolute inset-0 bg-black/20" />
+          <div className="absolute inset-0 bg-gradient-to-br from-swiss-navy-deep/92 to-swiss-orange-muted/82" />
         </div>
 
         <div className="mx-auto max-w-[1280px]">
@@ -310,7 +311,7 @@ export default function LandingPage() {
       </section>
 
       {/* ===================== DIFERENCIAIS (cartões estilo "planos") ===================== */}
-      <section id="diferenciais" className="bg-swiss-navy px-5 py-20 text-white md:px-10 md:py-28">
+      <section id="diferenciais" className="bg-swiss-navy px-5 py-24 text-white md:px-10 md:py-28">
         <div className="mx-auto max-w-[1280px]">
           <div className="mb-12 flex items-end justify-between gap-6 md:mb-16">
             <h2 className="font-display text-3xl font-extrabold tracking-tight md:text-4xl">Conheça antes de decidir.</h2>
@@ -345,33 +346,25 @@ export default function LandingPage() {
       </section>
 
       {/* ===================== VALORES — foto editorial de fundo ===================== */}
-      <section id="valores" className="relative isolate overflow-hidden px-5 py-20 md:px-10 md:py-28">
-        <div className="absolute inset-0 -z-10">
-          <Image
-            src="/landing/pensa-foto.jpg"
-            alt="Fachada aconchegante de um bar à noite, com clientes à mesa"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-swiss-navy-deep/88 to-swiss-navy/70" />
-        </div>
-
+      <section id="valores" className="bg-swiss-cream px-5 py-24 md:px-10 md:py-28">
         <div className="mx-auto max-w-[1280px]">
           <div className="mb-12 flex items-end justify-between gap-6 md:mb-16">
-            <h2 className="font-display text-3xl font-extrabold tracking-tight text-white md:text-4xl">
+            <h2 className="font-display text-3xl font-extrabold tracking-tight text-swiss-navy md:text-4xl">
               Como a Seja Acqua pensa.
             </h2>
-            <span className="font-apoio hidden text-[12px] font-medium uppercase tracking-[0.1em] text-white/50 md:block">
+            <span className="font-apoio hidden text-[12px] font-medium uppercase tracking-[0.1em] text-swiss-navy/40 md:block">
               06 princípios
             </span>
           </div>
 
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {COMO_PENSA.map((v) => (
-              <div key={v.title} className="rounded-3xl bg-white/95 p-7 backdrop-blur transition-transform hover:-translate-y-1">
+              <div
+                key={v.title}
+                className="rounded-3xl border border-black/5 bg-white p-7 shadow-lg shadow-black/5 transition-transform hover:-translate-y-1"
+              >
                 <div className="flex items-center justify-between">
-                  <span className="font-apoio inline-flex h-10 w-10 items-center justify-center rounded-full bg-swiss-cream text-swiss-orange">
+                  <span className="font-apoio inline-flex h-10 w-10 items-center justify-center rounded-full bg-swiss-navy text-white">
                     {v.icon}
                   </span>
                   {v.tag && (
@@ -386,15 +379,15 @@ export default function LandingPage() {
             ))}
           </div>
 
-          <p className="font-apoio mt-14 text-center text-lg leading-relaxed text-white md:text-xl">
+          <p className="font-apoio mt-14 text-center text-lg leading-relaxed text-swiss-navy md:text-xl">
             Informação para entender. Tecnologia para facilitar.{' '}
-            <span className="text-swiss-orange-bright">Proximidade para acompanhar.</span>
+            <span className="text-swiss-orange">Proximidade para acompanhar.</span>
           </p>
         </div>
       </section>
 
       {/* ===================== CADASTRO — lead form real ===================== */}
-      <section id="cadastro" className="px-5 py-20 md:px-10 md:py-28">
+      <section id="cadastro" className="px-5 py-24 md:px-10 md:py-28">
         <div className="mx-auto max-w-[1280px]">
           <div className="rounded-3xl bg-gradient-to-br from-swiss-navy to-swiss-navy-deep p-8 text-white md:p-14">
             <div className="grid gap-10 md:grid-cols-2 md:gap-16">
