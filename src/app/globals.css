@@ -976,33 +976,33 @@ h3 {
    /landing — Swiss + Brutalist + Claymorphism experiment
    ============================================================ */
 .clay {
-  background: #ede7dc;
+  background: #e6d5b7;
   box-shadow:
-    16px 16px 32px rgb(27 58 107 / 0.14),
-    -16px -16px 32px rgb(255 255 255 / 0.9),
-    inset 6px 6px 12px rgb(255 255 255 / 0.6),
-    inset -6px -6px 12px rgb(27 58 107 / 0.08);
+    16px 16px 32px rgb(30 34 61 / 0.18),
+    -16px -16px 32px rgb(255 255 255 / 0.7),
+    inset 6px 6px 12px rgb(255 255 255 / 0.5),
+    inset -6px -6px 12px rgb(30 34 61 / 0.1);
 }
 .clay-btn {
-  background: #1b3a6b;
+  background: #f54f1b;
   box-shadow:
-    8px 8px 18px rgb(27 58 107 / 0.35),
-    -6px -6px 16px rgb(255 255 255 / 0.5),
-    inset 3px 3px 6px rgb(255 255 255 / 0.18),
-    inset -3px -3px 6px rgb(0 0 0 / 0.25);
+    8px 8px 18px rgb(30 34 61 / 0.35),
+    -6px -6px 16px rgb(255 255 255 / 0.4),
+    inset 3px 3px 6px rgb(255 255 255 / 0.3),
+    inset -3px -3px 6px rgb(0 0 0 / 0.22);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .clay-btn:hover {
   transform: translateY(-2px);
   box-shadow:
-    10px 10px 22px rgb(27 58 107 / 0.4),
-    -6px -6px 16px rgb(255 255 255 / 0.5),
-    inset 3px 3px 6px rgb(255 255 255 / 0.22),
-    inset -3px -3px 6px rgb(0 0 0 / 0.28);
+    10px 10px 22px rgb(30 34 61 / 0.4),
+    -6px -6px 16px rgb(255 255 255 / 0.4),
+    inset 3px 3px 6px rgb(255 255 255 / 0.34),
+    inset -3px -3px 6px rgb(0 0 0 / 0.25);
 }
 .clay-inset {
-  background: #e4ddcf;
+  background: #ddccae;
   box-shadow:
-    inset 6px 6px 14px rgb(27 58 107 / 0.14),
-    inset -6px -6px 14px rgb(255 255 255 / 0.8);
+    inset 6px 6px 14px rgb(30 34 61 / 0.16),
+    inset -6px -6px 14px rgb(255 255 255 / 0.65);
 }
