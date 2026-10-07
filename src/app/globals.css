@@ -973,44 +973,32 @@ h3 {
 }
 
 /* ============================================================
-   /landing — Swiss + Brutalist + Claymorphism experiment
+   /landing — Swiss-Brutalist Financeiro (clay refinado, sem blur)
    ============================================================ */
 .clay {
-  background: #e6d5b7;
-  box-shadow:
-    16px 16px 32px rgb(30 34 61 / 0.18),
-    -16px -16px 32px rgb(255 255 255 / 0.7),
-    inset 6px 6px 12px rgb(255 255 255 / 0.5),
-    inset -6px -6px 12px rgb(30 34 61 / 0.1);
+  background: #ffffff;
+  border: 2px solid #0f172a;
+  box-shadow: 8px 8px 0 0 #0f172a;
 }
 .clay-btn {
   background: #f54f1b;
-  box-shadow:
-    8px 8px 18px rgb(30 34 61 / 0.35),
-    -6px -6px 16px rgb(255 255 255 / 0.4),
-    inset 3px 3px 6px rgb(255 255 255 / 0.3),
-    inset -3px -3px 6px rgb(0 0 0 / 0.22);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 2px solid #0f172a;
+  box-shadow: 6px 6px 0 0 #0f172a;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 .clay-btn:hover {
-  transform: translateY(-2px);
-  box-shadow:
-    10px 10px 22px rgb(30 34 61 / 0.4),
-    -6px -6px 16px rgb(255 255 255 / 0.4),
-    inset 3px 3px 6px rgb(255 255 255 / 0.34),
-    inset -3px -3px 6px rgb(0 0 0 / 0.25);
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 0 #0f172a;
 }
 .clay-inset {
-  background: #ddccae;
-  box-shadow:
-    inset 6px 6px 14px rgb(30 34 61 / 0.16),
-    inset -6px -6px 14px rgb(255 255 255 / 0.65);
+  background: #f8f5ec;
+  border: 1.5px solid rgb(15 23 42 / 0.16);
 }
 .clay-icon {
-  background: #e6d5b7;
-  box-shadow:
-    6px 6px 14px rgb(30 34 61 / 0.18),
-    -6px -6px 14px rgb(255 255 255 / 0.75),
-    inset 2px 2px 5px rgb(255 255 255 / 0.55),
-    inset -2px -2px 5px rgb(30 34 61 / 0.12);
+  background: #ffffff;
+  border: 2px solid #0f172a;
+  box-shadow: 3px 3px 0 0 #0f172a;
+}
+.font-syne {
+  font-family: var(--font-syne), 'Space Grotesk', sans-serif;
 }
