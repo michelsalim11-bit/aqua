@@ -10,6 +10,11 @@ import {
   Clock3,
   BarChart3,
   Users2,
+  Target,
+  Telescope,
+  Info,
+  Cpu,
+  Eye,
 } from 'lucide-react';
 import { LeadForm } from './LeadForm';
 
@@ -41,9 +46,42 @@ export const metadata: Metadata = {
 };
 
 const COMO_PENSA = [
-  { n: '01', title: 'Informação', body: 'Você conhece as condições antes de tomar qualquer decisão.' },
-  { n: '02', title: 'Tecnologia', body: 'Organizamos as informações e tornamos a experiência mais simples.' },
-  { n: '03', title: 'Proximidade', body: 'A jornada é digital, mas nossa equipe continua por perto.' },
+  {
+    tag: 'Missão',
+    title: 'Acesso Simples',
+    body: 'Tornar o acesso a mercados ligados à economia real mais simples, próximo e transparente.',
+    icon: <Target className="h-5 w-5" aria-hidden="true" />,
+  },
+  {
+    tag: 'Visão',
+    title: 'Referência Nacional',
+    body: 'Ser referência nacional em tecnologia e acesso aos mercados de crédito e recebíveis.',
+    icon: <Telescope className="h-5 w-5" aria-hidden="true" />,
+  },
+  {
+    tag: null,
+    title: 'Informação',
+    body: 'Você conhece as condições antes de tomar qualquer decisão.',
+    icon: <Info className="h-5 w-5" aria-hidden="true" />,
+  },
+  {
+    tag: null,
+    title: 'Tecnologia',
+    body: 'Usamos a tecnologia para organizar informações e tornar a experiência mais simples.',
+    icon: <Cpu className="h-5 w-5" aria-hidden="true" />,
+  },
+  {
+    tag: null,
+    title: 'Proximidade',
+    body: 'A jornada é digital, mas nossa equipe continua por perto sempre que você precisar.',
+    icon: <Users2 className="h-5 w-5" aria-hidden="true" />,
+  },
+  {
+    tag: null,
+    title: 'Transparência',
+    body: 'Condições, prazos e critérios são apresentados de forma clara durante toda a jornada.',
+    icon: <Eye className="h-5 w-5" aria-hidden="true" />,
+  },
 ];
 
 const DIFERENCIAIS = [
@@ -57,10 +95,10 @@ const DIFERENCIAIS = [
 export default function LandingPage() {
   return (
     <div
-      className={`${display.variable} ${apoio.variable} ${body.variable} font-body bg-white text-swiss-ink`}
+      className={`${display.variable} ${apoio.variable} ${body.variable} font-body bg-swiss-cream-soft text-swiss-ink`}
     >
       {/* ===================== HEADER ===================== */}
-      <header className="sticky top-0 z-20 bg-white/90 backdrop-blur">
+      <header className="sticky top-0 z-20 bg-swiss-header-footer/95 backdrop-blur">
         <div className="mx-auto flex max-w-[1280px] items-center justify-between px-5 py-5 md:px-10">
           <Link href="/" className="flex items-center gap-2" aria-label="Seja Acqua, página inicial">
             <Image src="/logo-green.svg" alt="Seja Acqua" width={120} height={26} priority className="h-6 w-auto md:h-7" />
@@ -114,7 +152,7 @@ export default function LandingPage() {
           <div className="font-body mt-8 flex flex-wrap items-center gap-4">
             <Link
               href="/criar-conta"
-              className="inline-flex items-center gap-2 rounded-full bg-swiss-orange px-7 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-[1.03] hover:bg-swiss-orange-bright"
+              className="inline-flex items-center gap-2 rounded-full bg-swiss-orange-muted px-7 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-[1.03] hover:brightness-110"
             >
               Criar conta
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -158,8 +196,44 @@ export default function LandingPage() {
         <div className="h-6 md:h-10" />
       </section>
 
+      {/* ===================== CONHEÇA A SEJA ACQUA ===================== */}
+      <section id="quem" className="bg-swiss-cream-soft px-5 py-20 md:px-10 md:py-28">
+        <div className="mx-auto max-w-[1280px]">
+          <div className="grid gap-10 md:grid-cols-2 md:items-center md:gap-16">
+            <h2 className="font-display max-w-[16ch] text-3xl font-extrabold leading-[1.1] tracking-tight text-swiss-navy md:text-5xl">
+              Seja Acqua é uma plataforma de tecnologia conectada à economia real.
+            </h2>
+            <div>
+              <p className="font-apoio max-w-[46ch] text-base leading-relaxed text-swiss-navy/65 md:text-lg">
+                Um ambiente criado para aproximar pessoas de oportunidades, organizar informações
+                e facilitar cada etapa da jornada. Reunimos tecnologia, informação e
+                acompanhamento humano em uma plataforma que apresenta oportunidades ligadas ao
+                crédito e aos recebíveis.
+              </p>
+              <div className="font-body mt-8 flex flex-wrap items-center gap-4">
+                <Link
+                  href="#diferenciais"
+                  className="inline-flex items-center gap-2 rounded-full bg-swiss-navy px-7 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-[1.03] hover:bg-swiss-navy-deep"
+                >
+                  Entenda como a Seja Acqua funciona
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </Link>
+                <a
+                  href={WHATSAPP}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-swiss-navy/20 px-7 py-3.5 text-sm font-semibold text-swiss-navy transition-colors hover:bg-white"
+                >
+                  Fale com a gente
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===================== SUA OPERAÇÃO, SEMPRE EM DIA ===================== */}
-      <section className="bg-white px-5 py-20 md:px-10 md:py-28">
+      <section className="bg-swiss-cream-soft px-5 py-20 md:px-10 md:py-28">
         <div className="mx-auto max-w-[1280px]">
           <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end">
             <div>
@@ -183,7 +257,7 @@ export default function LandingPage() {
                   Simular <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
                 </Link>
               </div>
-              <div className="rounded-3xl bg-gradient-to-br from-swiss-navy-deep to-swiss-orange p-7 text-white transition-transform hover:-translate-y-1">
+              <div className="rounded-3xl bg-gradient-to-br from-swiss-navy-deep to-swiss-orange-muted p-7 text-white transition-transform hover:-translate-y-1">
                 <span className="font-apoio text-[12px] font-medium uppercase tracking-[0.1em] text-white/60">Modalidade</span>
                 <p className="font-apoio mt-3 text-3xl font-extrabold tracking-tight">60–90 dias</p>
                 <p className="font-body mt-2 text-[14px] text-white/70">Ciclo estendido de antecipação.</p>
@@ -217,7 +291,7 @@ export default function LandingPage() {
             className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-swiss-navy-deep/90 to-swiss-orange/70" />
+          <div className="absolute inset-0 bg-gradient-to-br from-swiss-navy-deep/90 to-swiss-orange-muted/80" />
         </div>
 
         <div className="mx-auto max-w-[1280px]">
@@ -289,21 +363,33 @@ export default function LandingPage() {
               Como a Seja Acqua pensa.
             </h2>
             <span className="font-apoio hidden text-[12px] font-medium uppercase tracking-[0.1em] text-white/50 md:block">
-              03 princípios
+              06 princípios
             </span>
           </div>
 
-          <div className="grid gap-5 md:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {COMO_PENSA.map((v) => (
-              <div key={v.n} className="rounded-3xl bg-white/95 p-8 backdrop-blur transition-transform hover:-translate-y-1">
-                <span className="font-apoio inline-flex h-9 w-9 items-center justify-center rounded-full bg-swiss-cream text-[13px] font-bold text-swiss-orange">
-                  {v.n}
-                </span>
+              <div key={v.title} className="rounded-3xl bg-white/95 p-7 backdrop-blur transition-transform hover:-translate-y-1">
+                <div className="flex items-center justify-between">
+                  <span className="font-apoio inline-flex h-10 w-10 items-center justify-center rounded-full bg-swiss-cream text-swiss-orange">
+                    {v.icon}
+                  </span>
+                  {v.tag && (
+                    <span className="font-apoio rounded-full bg-swiss-orange/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.1em] text-swiss-orange">
+                      {v.tag}
+                    </span>
+                  )}
+                </div>
                 <h3 className="font-apoio mt-5 text-xl font-bold text-swiss-navy">{v.title}</h3>
                 <p className="font-body mt-2 text-[15px] leading-relaxed text-swiss-navy/60">{v.body}</p>
               </div>
             ))}
           </div>
+
+          <p className="font-apoio mt-14 text-center text-lg leading-relaxed text-white md:text-xl">
+            Informação para entender. Tecnologia para facilitar.{' '}
+            <span className="text-swiss-orange-bright">Proximidade para acompanhar.</span>
+          </p>
         </div>
       </section>
 
@@ -334,7 +420,7 @@ export default function LandingPage() {
       </section>
 
       {/* ===================== FOOTER ===================== */}
-      <footer className="font-body border-t border-swiss-navy/10 bg-white px-5 pt-16 md:px-10">
+      <footer className="font-body border-t border-swiss-navy/10 bg-swiss-header-footer px-5 pt-16 md:px-10">
         <div className="mx-auto max-w-[1280px]">
           <div className="grid gap-12 pb-12 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
             <div>
@@ -367,6 +453,7 @@ export default function LandingPage() {
                 <li><a href="#mercado" className="transition-colors hover:text-swiss-navy">O mercado</a></li>
                 <li><a href="/#produto" className="transition-colors hover:text-swiss-navy">Soluções</a></li>
                 <li><Link href="/calculadora" className="transition-colors hover:text-swiss-navy">Calculadora</Link></li>
+                <li><Link href="/login" className="transition-colors hover:text-swiss-navy">Login</Link></li>
               </ul>
             </div>
 

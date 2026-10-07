@@ -16,10 +16,13 @@ const config: Config = {
         },
         swiss: {
           cream: '#E6D5B7',
+          'cream-soft': '#F7F2EA',
+          'header-footer': '#F5E8DA',
           navy: '#1E223D',
           'navy-deep': '#0E3655',
           orange: '#F54F1B',
           'orange-bright': '#FE7522',
+          'orange-muted': '#9C5A38',
           ink: '#1F1F1F',
         },
       },
