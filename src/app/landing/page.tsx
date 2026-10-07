@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Bricolage_Grotesque, Public_Sans, Inter } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -13,10 +13,22 @@ import {
   Users2,
 } from 'lucide-react';
 
-const inter = Inter({
+// Kregan/Raisah não estão disponíveis via Google Fonts (sem licença de embed web);
+// Bricolage Grotesque é o display mais próximo entre as fontes do sistema oficial.
+const display = Bricolage_Grotesque({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800', '900'],
-  variable: '--font-inter-landing',
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-display',
+});
+const apoio = Public_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-apoio',
+});
+const body = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-body',
 });
 
 export const metadata: Metadata = {
@@ -43,8 +55,7 @@ const DIFERENCIAIS = [
 export default function LandingPage() {
   return (
     <div
-      className={`${inter.variable} bg-swiss-cream text-swiss-ink`}
-      style={{ fontFamily: 'var(--font-inter-landing), sans-serif' }}
+      className={`${display.variable} ${apoio.variable} ${body.variable} font-body bg-swiss-cream text-swiss-ink`}
     >
       {/* ===================== HEADER ===================== */}
       <header className="sticky top-0 z-20 bg-swiss-cream/90 backdrop-blur">
@@ -53,7 +64,7 @@ export default function LandingPage() {
             <Image src="/logo-green.svg" alt="Seja Acqua" width={120} height={26} priority className="h-6 w-auto md:h-7" />
           </Link>
 
-          <nav className="hidden items-center gap-9 text-[14px] font-medium text-swiss-navy/70 md:flex">
+          <nav className="font-body hidden items-center gap-9 text-[14px] font-medium text-swiss-navy/70 md:flex">
             <a href="#sistema" className="transition-colors hover:text-swiss-navy">Sistema</a>
             <a href="#mercado" className="transition-colors hover:text-swiss-navy">Mercado</a>
             <a href="#diferenciais" className="transition-colors hover:text-swiss-navy">Diferenciais</a>
@@ -62,7 +73,7 @@ export default function LandingPage() {
 
           <Link
             href="/criar-conta"
-            className="rounded-full bg-swiss-navy px-5 py-2.5 text-[13px] font-semibold text-white transition-transform hover:scale-[1.04] hover:bg-swiss-navy-deep"
+            className="font-body rounded-full bg-swiss-navy px-5 py-2.5 text-[13px] font-semibold text-white transition-transform hover:scale-[1.04] hover:bg-swiss-navy-deep"
           >
             Criar conta
           </Link>
@@ -85,24 +96,24 @@ export default function LandingPage() {
         </div>
 
         <div className="mx-auto flex min-h-[560px] max-w-[1280px] flex-col justify-center px-5 py-20 md:min-h-[720px] md:px-10 md:py-28">
-          <span className="inline-flex w-fit items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-[12px] font-semibold text-white backdrop-blur">
+          <span className="font-apoio inline-flex w-fit items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-[12px] font-semibold text-white backdrop-blur">
             <span className="h-1.5 w-1.5 rounded-full bg-swiss-orange" />
             Sistema de antecipação · Seja Acqua
           </span>
 
-          <h1 className="mt-6 max-w-[15ch] text-[13vw] font-extrabold leading-[0.98] tracking-tight text-white md:text-[4.4vw]">
+          <h1 className="font-display mt-6 max-w-[15ch] text-[13vw] font-extrabold leading-[0.98] tracking-tight text-white md:text-[4.4vw]">
             O poder é <span className="text-swiss-orange">seu</span>.
             <br />
             Comece a montar.
           </h1>
 
-          <p className="mt-6 max-w-[42ch] text-base leading-relaxed text-white/80 md:text-lg">
+          <p className="font-apoio mt-6 max-w-[42ch] text-base leading-relaxed text-white/80 md:text-lg">
             Seja Acqua aproxima você de oportunidades ligadas ao mercado de crédito e
             recebíveis. Você conhece as condições, entende como cada possibilidade funciona e
             decide com informação.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-4">
+          <div className="font-body mt-8 flex flex-wrap items-center gap-4">
             <Link
               href="/criar-conta"
               className="inline-flex items-center gap-2 rounded-full bg-swiss-orange px-7 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-[1.03] hover:bg-swiss-orange-bright"
@@ -120,11 +131,11 @@ export default function LandingPage() {
 
           {/* Quadrado — mini painel de UI flutuando sobre a foto */}
           <div className="mt-12 w-full max-w-sm rounded-2xl bg-white/95 p-5 backdrop-blur md:mt-16">
-            <p className="text-[12px] text-swiss-navy/55">Valor estimado a antecipar</p>
-            <p className="mt-1 text-3xl font-extrabold tracking-tight text-swiss-navy">R$ 18.500</p>
+            <p className="font-body text-[12px] text-swiss-navy/55">Valor estimado a antecipar</p>
+            <p className="font-apoio mt-1 text-3xl font-extrabold tracking-tight text-swiss-navy">R$ 18.500</p>
             <Link
               href="/criar-conta"
-              className="mt-4 inline-flex items-center gap-2 rounded-full bg-swiss-navy px-5 py-2.5 text-[13px] font-semibold text-white transition-transform hover:scale-[1.03] hover:bg-swiss-navy-deep"
+              className="font-body mt-4 inline-flex items-center gap-2 rounded-full bg-swiss-navy px-5 py-2.5 text-[13px] font-semibold text-white transition-transform hover:scale-[1.03] hover:bg-swiss-navy-deep"
             >
               Ver oportunidades
               <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
@@ -134,7 +145,7 @@ export default function LandingPage() {
 
         {/* Badges — faixa inferior sobreposta à foto */}
         <div className="relative z-10 mx-auto -mt-6 max-w-[1280px] px-5 md:px-10">
-          <div className="flex flex-wrap gap-3 rounded-2xl bg-white px-5 py-4 shadow-[0_12px_30px_-14px_rgba(30,34,61,0.25)]">
+          <div className="font-body flex flex-wrap gap-3 rounded-2xl bg-white px-5 py-4 shadow-[0_12px_30px_-14px_rgba(30,34,61,0.25)]">
             <span className="inline-flex items-center gap-2 text-[12px] font-semibold text-swiss-navy/70">
               <ShieldCheck className="h-4 w-4 text-swiss-orange" aria-hidden="true" />
               Dados protegidos
@@ -154,12 +165,12 @@ export default function LandingPage() {
         <div className="mx-auto max-w-[1280px]">
           <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end">
             <div>
-              <h2 className="text-4xl font-extrabold leading-[1.05] tracking-tight text-swiss-navy md:text-5xl">
+              <h2 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-swiss-navy md:text-5xl">
                 Sua operação,
                 <br />
                 sempre em dia.
               </h2>
-              <p className="mt-5 max-w-[42ch] text-base leading-relaxed text-swiss-navy/60">
+              <p className="font-apoio mt-5 max-w-[42ch] text-base leading-relaxed text-swiss-navy/60">
                 Consulte as modalidades disponíveis e entenda os prazos antes de decidir. Nenhuma
                 possibilidade representa garantia de resultado.
               </p>
@@ -167,18 +178,18 @@ export default function LandingPage() {
 
             <div className="grid gap-5 sm:grid-cols-2">
               <div className="rounded-3xl bg-gradient-to-br from-swiss-navy to-swiss-navy-deep p-7 text-white transition-transform hover:-translate-y-1">
-                <span className="text-[12px] font-medium uppercase tracking-[0.1em] text-white/50">Modalidade</span>
-                <p className="mt-3 text-3xl font-extrabold tracking-tight">30–60 dias</p>
-                <p className="mt-2 text-[14px] text-white/60">Ciclo mais curto de antecipação.</p>
-                <Link href="/calculadora" className="mt-6 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-[13px] font-semibold transition-colors hover:bg-white/20">
+                <span className="font-apoio text-[12px] font-medium uppercase tracking-[0.1em] text-white/50">Modalidade</span>
+                <p className="font-apoio mt-3 text-3xl font-extrabold tracking-tight">30–60 dias</p>
+                <p className="font-body mt-2 text-[14px] text-white/60">Ciclo mais curto de antecipação.</p>
+                <Link href="/calculadora" className="font-body mt-6 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-[13px] font-semibold transition-colors hover:bg-white/20">
                   Simular <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
                 </Link>
               </div>
               <div className="rounded-3xl bg-gradient-to-br from-swiss-navy-deep to-swiss-orange p-7 text-white transition-transform hover:-translate-y-1">
-                <span className="text-[12px] font-medium uppercase tracking-[0.1em] text-white/60">Modalidade</span>
-                <p className="mt-3 text-3xl font-extrabold tracking-tight">60–90 dias</p>
-                <p className="mt-2 text-[14px] text-white/70">Ciclo estendido de antecipação.</p>
-                <Link href="/calculadora" className="mt-6 inline-flex items-center gap-1.5 rounded-full bg-white/15 px-4 py-2 text-[13px] font-semibold transition-colors hover:bg-white/25">
+                <span className="font-apoio text-[12px] font-medium uppercase tracking-[0.1em] text-white/60">Modalidade</span>
+                <p className="font-apoio mt-3 text-3xl font-extrabold tracking-tight">60–90 dias</p>
+                <p className="font-body mt-2 text-[14px] text-white/70">Ciclo estendido de antecipação.</p>
+                <Link href="/calculadora" className="font-body mt-6 inline-flex items-center gap-1.5 rounded-full bg-white/15 px-4 py-2 text-[13px] font-semibold transition-colors hover:bg-white/25">
                   Simular <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
                 </Link>
               </div>
@@ -186,7 +197,7 @@ export default function LandingPage() {
           </div>
 
           {/* linha de prova social — conteúdo real, baixo contraste */}
-          <div className="mt-16 flex flex-wrap items-center justify-between gap-6 border-t border-swiss-navy/10 pt-8 text-[13px] font-medium text-swiss-navy/45">
+          <div className="font-body mt-16 flex flex-wrap items-center justify-between gap-6 border-t border-swiss-navy/10 pt-8 text-[13px] font-medium text-swiss-navy/45">
             <span>Informação antes da decisão</span>
             <span className="hidden h-1 w-1 rounded-full bg-swiss-navy/25 sm:block" />
             <span>Tecnologia para organizar oportunidades</span>
@@ -212,13 +223,13 @@ export default function LandingPage() {
         </div>
 
         <div className="mx-auto max-w-[1280px]">
-          <span className="rounded-full bg-white/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em] text-white/70">
+          <span className="font-apoio rounded-full bg-white/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em] text-white/70">
             O mercado
           </span>
-          <h2 className="mt-5 max-w-[20ch] text-3xl font-extrabold leading-[1.1] tracking-tight md:text-5xl">
+          <h2 className="font-display mt-5 max-w-[20ch] text-3xl font-extrabold leading-[1.1] tracking-tight md:text-5xl">
             A empresa vende hoje. O recurso pode chegar depois.
           </h2>
-          <p className="mt-6 max-w-[60ch] text-base leading-relaxed text-white/85 md:text-lg">
+          <p className="font-apoio mt-6 max-w-[60ch] text-base leading-relaxed text-white/85 md:text-lg">
             Todos os dias, empresas vendem produtos, prestam serviços e geram valores a receber.
             Muitas vezes, o pagamento dessas vendas chega somente depois de 30, 60 ou 90 dias. A
             antecipação de recebíveis existe para reduzir essa distância.
@@ -230,8 +241,8 @@ export default function LandingPage() {
       <section id="diferenciais" className="bg-swiss-navy px-5 py-20 text-white md:px-10 md:py-28">
         <div className="mx-auto max-w-[1280px]">
           <div className="mb-12 flex items-end justify-between gap-6 md:mb-16">
-            <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl">Conheça antes de decidir.</h2>
-            <span className="hidden text-[12px] font-medium uppercase tracking-[0.1em] text-white/40 md:block">
+            <h2 className="font-display text-3xl font-extrabold tracking-tight md:text-4xl">Conheça antes de decidir.</h2>
+            <span className="font-apoio hidden text-[12px] font-medium uppercase tracking-[0.1em] text-white/40 md:block">
               05 diferenciais
             </span>
           </div>
@@ -247,8 +258,8 @@ export default function LandingPage() {
                     {d.icon}
                   </span>
                   <div>
-                    <h3 className="text-lg font-bold md:text-xl">{d.title}</h3>
-                    <p className="mt-1 text-[14px] text-white/55 md:text-[15px]">{d.body}</p>
+                    <h3 className="font-apoio text-lg font-bold md:text-xl">{d.title}</h3>
+                    <p className="font-body mt-1 text-[14px] text-white/55 md:text-[15px]">{d.body}</p>
                   </div>
                 </div>
                 <ArrowRight
@@ -265,10 +276,10 @@ export default function LandingPage() {
       <section id="valores" className="bg-white px-5 py-20 md:px-10 md:py-28">
         <div className="mx-auto max-w-[1280px]">
           <div className="mb-12 flex items-end justify-between gap-6 md:mb-16">
-            <h2 className="text-3xl font-extrabold tracking-tight text-swiss-navy md:text-4xl">
+            <h2 className="font-display text-3xl font-extrabold tracking-tight text-swiss-navy md:text-4xl">
               Como a Seja Acqua pensa.
             </h2>
-            <span className="hidden text-[12px] font-medium uppercase tracking-[0.1em] text-swiss-navy/40 md:block">
+            <span className="font-apoio hidden text-[12px] font-medium uppercase tracking-[0.1em] text-swiss-navy/40 md:block">
               03 princípios
             </span>
           </div>
@@ -276,11 +287,11 @@ export default function LandingPage() {
           <div className="grid gap-5 md:grid-cols-3">
             {COMO_PENSA.map((v) => (
               <div key={v.n} className="rounded-3xl bg-swiss-cream p-8 transition-transform hover:-translate-y-1">
-                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-[13px] font-bold text-swiss-orange">
+                <span className="font-apoio inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-[13px] font-bold text-swiss-orange">
                   {v.n}
                 </span>
-                <h3 className="mt-5 text-xl font-bold text-swiss-navy">{v.title}</h3>
-                <p className="mt-2 text-[15px] leading-relaxed text-swiss-navy/60">{v.body}</p>
+                <h3 className="font-apoio mt-5 text-xl font-bold text-swiss-navy">{v.title}</h3>
+                <p className="font-body mt-2 text-[15px] leading-relaxed text-swiss-navy/60">{v.body}</p>
               </div>
             ))}
           </div>
@@ -292,16 +303,16 @@ export default function LandingPage() {
         <div className="mx-auto max-w-[1280px]">
           <div className="flex flex-col items-start gap-8 rounded-3xl bg-gradient-to-br from-swiss-navy to-swiss-orange p-10 text-white md:flex-row md:items-center md:justify-between md:p-16">
             <div>
-              <span className="rounded-full bg-white/15 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em]">
+              <span className="font-apoio rounded-full bg-white/15 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em]">
                 Faça seu cadastro
               </span>
-              <h2 className="mt-4 max-w-[18ch] text-3xl font-extrabold leading-tight tracking-tight md:text-5xl">
+              <h2 className="font-display mt-4 max-w-[18ch] text-3xl font-extrabold leading-tight tracking-tight md:text-5xl">
                 Conheça a plataforma.
               </h2>
             </div>
             <Link
               href="/criar-conta"
-              className="inline-flex flex-none items-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-semibold text-swiss-navy transition-transform hover:scale-[1.04]"
+              className="font-body inline-flex flex-none items-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-semibold text-swiss-navy transition-transform hover:scale-[1.04]"
             >
               Criar conta
               <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
@@ -311,7 +322,7 @@ export default function LandingPage() {
       </section>
 
       {/* ===================== FOOTER ===================== */}
-      <footer className="px-5 py-6 md:px-10">
+      <footer className="font-body px-5 py-6 md:px-10">
         <div className="mx-auto flex max-w-[1280px] flex-col items-start justify-between gap-3 text-[12px] text-swiss-navy/50 md:flex-row md:items-center">
           <span>© 2026 Seja Acqua</span>
           <Link href="/" className="underline-offset-4 hover:underline">
