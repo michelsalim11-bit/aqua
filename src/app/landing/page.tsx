@@ -1,7 +1,16 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import {
+  ArrowRight,
+  ArrowUpRight,
+  FileCheck2,
+  TrendingUp,
+  Clock3,
+  BarChart3,
+  Users2,
+  CheckCircle2,
+} from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Landing — Swiss / Brutalist / Clay',
@@ -28,6 +37,20 @@ const VALUES = [
   },
 ];
 
+const DIFERENCIAIS = [
+  { icon: <FileCheck2 className="h-5 w-5" aria-hidden="true" />, title: 'Condições conhecidas', body: 'Apresentadas antes de qualquer decisão.' },
+  { icon: <TrendingUp className="h-5 w-5" aria-hidden="true" />, title: 'Remuneração', body: 'Forma e condições previstas, sem letra miúda.' },
+  { icon: <Clock3 className="h-5 w-5" aria-hidden="true" />, title: 'Prazo e carência', body: 'Disponíveis para consulta a qualquer momento.' },
+  { icon: <BarChart3 className="h-5 w-5" aria-hidden="true" />, title: 'Previsibilidade', body: 'Fluxos e critérios apresentados desde o início.' },
+  { icon: <Users2 className="h-5 w-5" aria-hidden="true" />, title: 'Acompanhamento', body: 'Nossa equipe segue com você na jornada.' },
+];
+
+const TIMELINE = [
+  { label: '30 dias', status: 'Em análise' },
+  { label: '60 dias', status: 'Em andamento' },
+  { label: '90 dias', status: 'Circulação' },
+];
+
 export default function LandingPage() {
   return (
     <div className="bg-[#e6d5b7] text-[#1e223d]">
@@ -44,6 +67,9 @@ export default function LandingPage() {
             </a>
             <a href="#mercado" className="hover:underline">
               Mercado
+            </a>
+            <a href="#diferenciais" className="hover:underline">
+              Diferenciais
             </a>
             <a href="#valores" className="hover:underline">
               Valores
@@ -62,9 +88,14 @@ export default function LandingPage() {
       {/* ===================== HERO ===================== */}
       <section id="sistema" className="border-b-[3px] border-[#1e223d]">
         <div className="mx-auto max-w-[1400px] px-5 pb-16 pt-14 md:px-10 md:pb-24 md:pt-20">
-          <div className="mb-8 flex items-center gap-3 font-mono text-[11px] font-bold uppercase tracking-[0.22em] text-[#1e223d]/60 md:mb-12">
-            <span className="h-2 w-2 rounded-full bg-[#f54f1b]" />
-            Seja Acqua — Sistema 01 / Economia real
+          <div className="mb-8 flex flex-wrap items-center gap-3 md:mb-12">
+            <span className="inline-flex items-center gap-2 border-[2px] border-[#1e223d] px-3 py-1.5 font-mono text-[10.5px] font-bold uppercase tracking-[0.14em]">
+              <span className="h-2 w-2 rounded-full bg-[#f54f1b]" />
+              Sistema de antecipação · v2
+            </span>
+            <span className="font-mono text-[11px] font-bold uppercase tracking-[0.22em] text-[#1e223d]/60">
+              Seja Acqua — Economia real
+            </span>
           </div>
 
           <h1 className="font-heading text-[14vw] font-bold uppercase leading-[0.86] tracking-tight md:text-[7.2vw]">
@@ -97,23 +128,29 @@ export default function LandingPage() {
               </div>
             </div>
 
+            {/* Clay "dashboard" panel — linha do tempo da antecipação */}
             <div className="flex flex-col justify-between">
               <p className="font-mono text-sm uppercase leading-relaxed tracking-[0.06em] text-[#1e223d]/60">
                 Oportunidades reais, apresentadas com clareza — sem letra miúda, sem promessa de
                 resultado garantido.
               </p>
-              <div className="mt-10 grid grid-cols-3 border-[2px] border-[#1e223d]/20 font-mono text-center md:mt-0">
-                <div className="border-r-[2px] border-[#1e223d]/20 p-5">
-                  <p className="font-heading text-3xl font-bold md:text-4xl">30</p>
-                  <p className="mt-1 text-[10px] uppercase tracking-[0.12em] text-[#1e223d]/55">dias</p>
+
+              <div className="clay mt-10 rounded-[28px] p-6 md:mt-0 md:rounded-[32px] md:p-7">
+                <div className="mb-5 flex items-center justify-between font-mono text-[10.5px] font-bold uppercase tracking-[0.14em] text-[#1e223d]/50">
+                  <span>Linha do tempo</span>
+                  <span className="text-[#f54f1b]">Antecipação</span>
                 </div>
-                <div className="border-r-[2px] border-[#1e223d]/20 p-5">
-                  <p className="font-heading text-3xl font-bold md:text-4xl">60</p>
-                  <p className="mt-1 text-[10px] uppercase tracking-[0.12em] text-[#1e223d]/55">dias</p>
-                </div>
-                <div className="p-5">
-                  <p className="font-heading text-3xl font-bold md:text-4xl">90</p>
-                  <p className="mt-1 text-[10px] uppercase tracking-[0.12em] text-[#1e223d]/55">dias</p>
+                <div className="grid grid-cols-3 gap-3">
+                  {TIMELINE.map((t) => (
+                    <div key={t.label} className="clay-inset rounded-2xl p-4 text-center">
+                      <p className="font-heading text-2xl font-bold md:text-3xl">{t.label.split(' ')[0]}</p>
+                      <p className="mt-0.5 text-[10px] uppercase tracking-[0.1em] text-[#1e223d]/55">dias</p>
+                      <div className="mt-3 flex items-center justify-center gap-1 font-mono text-[9px] font-bold uppercase tracking-[0.08em] text-[#1e223d]/65">
+                        <CheckCircle2 className="h-3 w-3 text-[#f54f1b]" aria-hidden="true" />
+                        {t.status}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -135,6 +172,75 @@ export default function LandingPage() {
             Muitas vezes, o pagamento dessas vendas chega somente depois de 30, 60 ou 90 dias. A
             antecipação de recebíveis existe para reduzir essa distância.
           </p>
+        </div>
+      </section>
+
+      {/* ===================== DIFERENCIAIS (clay icon grid) ===================== */}
+      <section id="diferenciais" className="border-b-[3px] border-[#1e223d]">
+        <div className="mx-auto max-w-[1400px] px-5 py-14 md:px-10 md:py-20">
+          <div className="mb-10 flex items-end justify-between gap-6 md:mb-14">
+            <h2 className="font-heading text-3xl font-bold uppercase leading-[1.05] md:text-5xl">
+              Conheça antes
+              <br />
+              de decidir.
+            </h2>
+            <span className="hidden font-mono text-[11px] font-bold uppercase tracking-[0.2em] text-[#1e223d]/50 md:block">
+              05 diferenciais
+            </span>
+          </div>
+
+          <div className="grid gap-5 border-t-[2px] border-[#1e223d]/20 pt-10 sm:grid-cols-2 lg:grid-cols-5">
+            {DIFERENCIAIS.map((d) => (
+              <div key={d.title} className="border-[2px] border-[#1e223d]/15 p-6">
+                <span className="clay-icon inline-flex h-11 w-11 items-center justify-center rounded-full text-[#f54f1b]">
+                  {d.icon}
+                </span>
+                <h3 className="mt-4 font-heading text-base font-bold uppercase tracking-tight">{d.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[#1e223d]/70">{d.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===================== NO DIA A DIA (fotos reais) ===================== */}
+      <section className="border-b-[3px] border-[#1e223d]">
+        <div className="mx-auto max-w-[1400px] px-5 py-14 md:px-10 md:py-20">
+          <div className="mb-10 font-mono text-[11px] font-bold uppercase tracking-[0.22em] text-[#1e223d]/50 md:mb-14">
+            {'// Seja Acqua no dia a dia'}
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 md:gap-8">
+            <figure className="border-[3px] border-[#1e223d]">
+              <div className="relative aspect-[4/5] w-full">
+                <Image
+                  src="/landing/vida-caminhamos.jpg"
+                  alt="Duas pessoas caminhando lado a lado em um corredor envidraçado"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+              </div>
+              <figcaption className="flex items-center justify-between border-t-[3px] border-[#1e223d] p-5 font-mono text-[11px] uppercase tracking-[0.1em] text-[#1e223d]/70">
+                <span>Quadro 01</span>
+                <span className="text-[#f54f1b]">Relacionamento</span>
+              </figcaption>
+            </figure>
+            <figure className="border-[3px] border-[#1e223d]">
+              <div className="relative aspect-[4/5] w-full">
+                <Image
+                  src="/landing/vida-selic.jpg"
+                  alt="Pessoa caminhando em frente ao edifício do Banco Central do Brasil"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+              </div>
+              <figcaption className="flex items-center justify-between border-t-[3px] border-[#1e223d] p-5 font-mono text-[11px] uppercase tracking-[0.1em] text-[#1e223d]/70">
+                <span>Quadro 02</span>
+                <span className="text-[#f54f1b]">Mercado</span>
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
