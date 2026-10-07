@@ -80,9 +80,9 @@ export default function LandingPage() {
               </span>
 
               <h1 className="mt-6 text-[13vw] font-extrabold leading-[0.98] tracking-tight text-swiss-navy md:text-[3.6vw]">
-                Economia real,
+                O poder é <span className="text-swiss-orange">seu</span>.
                 <br />
-                sem <span className="text-swiss-orange">letra miúda</span>.
+                Comece a montar.
               </h1>
 
               <p className="mt-6 max-w-[42ch] text-base leading-relaxed text-swiss-navy/65 md:text-lg">
@@ -108,39 +108,29 @@ export default function LandingPage() {
               </div>
             </div>
 
-            {/* Card de visualização — 100% UI em código, sem foto */}
+            {/* Foto real + quadrado de UI sobreposto, estilo Revolut */}
             <div className="relative">
-              <div className="rounded-3xl bg-gradient-to-br from-swiss-navy to-swiss-navy-deep p-7 text-white shadow-[0_30px_60px_-20px_rgba(14,54,85,0.45)] md:p-9">
-                <div className="flex items-center justify-between">
-                  <span className="text-[12px] font-medium uppercase tracking-[0.1em] text-white/55">
-                    Simulação · Antecipação
-                  </span>
-                  <span className="flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-[11px] font-semibold text-swiss-orange-bright">
-                    <span className="h-1.5 w-1.5 rounded-full bg-swiss-orange-bright" />
-                    Ilustrativo
-                  </span>
-                </div>
+              <div className="relative aspect-[4/5] overflow-hidden rounded-3xl shadow-[0_30px_60px_-20px_rgba(30,34,61,0.4)]">
+                <Image
+                  src="/landing/hero-foto.jpg"
+                  alt="Cliente consultando a plataforma Seja Acqua pelo celular"
+                  fill
+                  priority
+                  className="object-cover"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
 
-                <p className="mt-7 text-[13px] text-white/55">Valor estimado a antecipar</p>
-                <p className="mt-1 text-[13vw] font-extrabold leading-none tracking-tight sm:text-[52px]">
-                  R$ 18.500
-                </p>
-
-                <Link
-                  href="/criar-conta"
-                  className="mt-7 inline-flex items-center gap-2 rounded-full bg-swiss-orange px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-[1.03] hover:bg-swiss-orange-bright"
-                >
-                  Ver oportunidades
-                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                </Link>
-
-                <div className="mt-8 grid grid-cols-3 gap-3 border-t border-white/10 pt-6">
-                  {['30', '60', '90'].map((d) => (
-                    <div key={d} className="text-center">
-                      <p className="text-xl font-bold sm:text-2xl">{d}</p>
-                      <p className="mt-0.5 text-[10px] uppercase tracking-[0.1em] text-white/45">dias</p>
-                    </div>
-                  ))}
+                {/* Quadrado — mini painel de UI sobre a foto */}
+                <div className="absolute inset-x-5 bottom-5 rounded-2xl bg-white/95 p-5 backdrop-blur">
+                  <p className="text-[12px] text-swiss-navy/55">Valor estimado a antecipar</p>
+                  <p className="mt-1 text-3xl font-extrabold tracking-tight text-swiss-navy">R$ 18.500</p>
+                  <Link
+                    href="/criar-conta"
+                    className="mt-4 inline-flex items-center gap-2 rounded-full bg-swiss-orange px-5 py-2.5 text-[13px] font-semibold text-white transition-transform hover:scale-[1.03] hover:bg-swiss-orange-bright"
+                  >
+                    Ver oportunidades
+                    <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
+                  </Link>
                 </div>
               </div>
 
