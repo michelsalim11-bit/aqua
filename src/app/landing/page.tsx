@@ -69,86 +69,84 @@ export default function LandingPage() {
         </div>
       </header>
 
-      {/* ===================== HERO ===================== */}
-      <section id="sistema" className="px-5 pb-20 pt-6 md:px-10 md:pb-28">
-        <div className="mx-auto max-w-[1280px]">
-          <div className="grid gap-14 md:grid-cols-2 md:items-center md:gap-10">
-            <div>
-              <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-[12px] font-semibold text-swiss-navy/70">
-                <span className="h-1.5 w-1.5 rounded-full bg-swiss-orange" />
-                Sistema de antecipação · Seja Acqua
-              </span>
+      {/* ===================== HERO — foto em tela cheia, texto sobreposto ===================== */}
+      <section id="sistema" className="relative isolate overflow-hidden">
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src="/landing/hero-foto.jpg"
+            alt="Cliente consultando a plataforma Seja Acqua pelo celular"
+            fill
+            priority
+            className="object-cover object-[65%_20%]"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-swiss-navy/90 via-swiss-navy/55 to-swiss-navy/10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-swiss-navy/80 via-transparent to-transparent" />
+        </div>
 
-              <h1 className="mt-6 text-[13vw] font-extrabold leading-[0.98] tracking-tight text-swiss-navy md:text-[3.6vw]">
-                O poder é <span className="text-swiss-orange">seu</span>.
-                <br />
-                Comece a montar.
-              </h1>
+        <div className="mx-auto flex min-h-[560px] max-w-[1280px] flex-col justify-center px-5 py-20 md:min-h-[720px] md:px-10 md:py-28">
+          <span className="inline-flex w-fit items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-[12px] font-semibold text-white backdrop-blur">
+            <span className="h-1.5 w-1.5 rounded-full bg-swiss-orange" />
+            Sistema de antecipação · Seja Acqua
+          </span>
 
-              <p className="mt-6 max-w-[42ch] text-base leading-relaxed text-swiss-navy/65 md:text-lg">
-                Seja Acqua aproxima você de oportunidades ligadas ao mercado de crédito e
-                recebíveis. Você conhece as condições, entende como cada possibilidade funciona e
-                decide com informação.
-              </p>
+          <h1 className="mt-6 max-w-[15ch] text-[13vw] font-extrabold leading-[0.98] tracking-tight text-white md:text-[4.4vw]">
+            O poder é <span className="text-swiss-orange">seu</span>.
+            <br />
+            Comece a montar.
+          </h1>
 
-              <div className="mt-8 flex flex-wrap items-center gap-4">
-                <Link
-                  href="/criar-conta"
-                  className="inline-flex items-center gap-2 rounded-full bg-swiss-navy px-7 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-[1.03] hover:bg-swiss-navy-deep"
-                >
-                  Criar conta
-                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                </Link>
-                <Link
-                  href="#diferenciais"
-                  className="inline-flex items-center gap-2 rounded-full border border-swiss-navy/20 px-7 py-3.5 text-sm font-semibold text-swiss-navy transition-colors hover:bg-white"
-                >
-                  Como funciona
-                </Link>
-              </div>
-            </div>
+          <p className="mt-6 max-w-[42ch] text-base leading-relaxed text-white/80 md:text-lg">
+            Seja Acqua aproxima você de oportunidades ligadas ao mercado de crédito e
+            recebíveis. Você conhece as condições, entende como cada possibilidade funciona e
+            decide com informação.
+          </p>
 
-            {/* Foto real + quadrado de UI sobreposto, estilo Revolut */}
-            <div className="relative">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-3xl shadow-[0_30px_60px_-20px_rgba(30,34,61,0.4)]">
-                <Image
-                  src="/landing/hero-foto.jpg"
-                  alt="Cliente consultando a plataforma Seja Acqua pelo celular"
-                  fill
-                  priority
-                  className="object-cover"
-                  sizes="(min-width: 768px) 50vw, 100vw"
-                />
+          <div className="mt-8 flex flex-wrap items-center gap-4">
+            <Link
+              href="/criar-conta"
+              className="inline-flex items-center gap-2 rounded-full bg-swiss-orange px-7 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-[1.03] hover:bg-swiss-orange-bright"
+            >
+              Criar conta
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Link>
+            <Link
+              href="#diferenciais"
+              className="inline-flex items-center gap-2 rounded-full border border-white/35 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur transition-colors hover:bg-white/20"
+            >
+              Como funciona
+            </Link>
+          </div>
 
-                {/* Quadrado — mini painel de UI sobre a foto */}
-                <div className="absolute inset-x-5 bottom-5 rounded-2xl bg-white/95 p-5 backdrop-blur">
-                  <p className="text-[12px] text-swiss-navy/55">Valor estimado a antecipar</p>
-                  <p className="mt-1 text-3xl font-extrabold tracking-tight text-swiss-navy">R$ 18.500</p>
-                  <Link
-                    href="/criar-conta"
-                    className="mt-4 inline-flex items-center gap-2 rounded-full bg-swiss-orange px-5 py-2.5 text-[13px] font-semibold text-white transition-transform hover:scale-[1.03] hover:bg-swiss-orange-bright"
-                  >
-                    Ver oportunidades
-                    <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
-                  </Link>
-                </div>
-              </div>
-
-              {/* Badges sobrepostos, estilo Revolut */}
-              <div className="relative z-10 mx-4 -mt-6 flex flex-wrap gap-3 rounded-2xl bg-white px-5 py-4 shadow-[0_12px_30px_-14px_rgba(30,34,61,0.25)]">
-                <span className="inline-flex items-center gap-2 text-[12px] font-semibold text-swiss-navy/70">
-                  <ShieldCheck className="h-4 w-4 text-swiss-orange" aria-hidden="true" />
-                  Dados protegidos
-                </span>
-                <span className="hidden h-4 w-px bg-swiss-navy/15 sm:block" />
-                <span className="inline-flex items-center gap-2 text-[12px] font-semibold text-swiss-navy/70">
-                  <FileCheck2 className="h-4 w-4 text-swiss-orange" aria-hidden="true" />
-                  Sem letra miúda
-                </span>
-              </div>
-            </div>
+          {/* Quadrado — mini painel de UI flutuando sobre a foto */}
+          <div className="mt-12 w-full max-w-sm rounded-2xl bg-white/95 p-5 backdrop-blur md:mt-16">
+            <p className="text-[12px] text-swiss-navy/55">Valor estimado a antecipar</p>
+            <p className="mt-1 text-3xl font-extrabold tracking-tight text-swiss-navy">R$ 18.500</p>
+            <Link
+              href="/criar-conta"
+              className="mt-4 inline-flex items-center gap-2 rounded-full bg-swiss-navy px-5 py-2.5 text-[13px] font-semibold text-white transition-transform hover:scale-[1.03] hover:bg-swiss-navy-deep"
+            >
+              Ver oportunidades
+              <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
+            </Link>
           </div>
         </div>
+
+        {/* Badges — faixa inferior sobreposta à foto */}
+        <div className="relative z-10 mx-auto -mt-6 max-w-[1280px] px-5 md:px-10">
+          <div className="flex flex-wrap gap-3 rounded-2xl bg-white px-5 py-4 shadow-[0_12px_30px_-14px_rgba(30,34,61,0.25)]">
+            <span className="inline-flex items-center gap-2 text-[12px] font-semibold text-swiss-navy/70">
+              <ShieldCheck className="h-4 w-4 text-swiss-orange" aria-hidden="true" />
+              Dados protegidos
+            </span>
+            <span className="hidden h-4 w-px bg-swiss-navy/15 sm:block" />
+            <span className="inline-flex items-center gap-2 text-[12px] font-semibold text-swiss-navy/70">
+              <FileCheck2 className="h-4 w-4 text-swiss-orange" aria-hidden="true" />
+              Sem letra miúda
+            </span>
+          </div>
+        </div>
+        <div className="h-6 md:h-10" />
       </section>
 
       {/* ===================== SUA OPERAÇÃO, SEMPRE EM DIA ===================== */}
@@ -200,8 +198,19 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ===================== O MERCADO ===================== */}
-      <section id="mercado" className="bg-gradient-to-br from-swiss-navy-deep to-swiss-orange px-5 py-20 text-white md:px-10 md:py-28">
+      {/* ===================== O MERCADO — foto editorial de fundo ===================== */}
+      <section id="mercado" className="relative isolate overflow-hidden px-5 py-20 text-white md:px-10 md:py-32">
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src="/landing/mercado-foto.jpg"
+            alt="Pessoas observando o horizonte ao amanhecer, lado a lado"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-swiss-navy-deep/90 to-swiss-orange/70" />
+        </div>
+
         <div className="mx-auto max-w-[1280px]">
           <span className="rounded-full bg-white/10 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em] text-white/70">
             O mercado
@@ -209,7 +218,7 @@ export default function LandingPage() {
           <h2 className="mt-5 max-w-[20ch] text-3xl font-extrabold leading-[1.1] tracking-tight md:text-5xl">
             A empresa vende hoje. O recurso pode chegar depois.
           </h2>
-          <p className="mt-6 max-w-[60ch] text-base leading-relaxed text-white/75 md:text-lg">
+          <p className="mt-6 max-w-[60ch] text-base leading-relaxed text-white/85 md:text-lg">
             Todos os dias, empresas vendem produtos, prestam serviços e geram valores a receber.
             Muitas vezes, o pagamento dessas vendas chega somente depois de 30, 60 ou 90 dias. A
             antecipação de recebíveis existe para reduzir essa distância.
