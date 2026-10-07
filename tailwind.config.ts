@@ -14,6 +14,14 @@ const config: Config = {
           'blue-deep': '#12213f',
           'blue-card': '#16233c',
         },
+        swiss: {
+          cream: '#E6D5B7',
+          navy: '#1E223D',
+          'navy-deep': '#0E3655',
+          orange: '#F54F1B',
+          'orange-bright': '#FE7522',
+          ink: '#1F1F1F',
+        },
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
