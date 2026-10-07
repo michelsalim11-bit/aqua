@@ -971,3 +971,38 @@ h3 {
 .prose-legal strong {
   color: var(--ink);
 }
+
+/* ============================================================
+   /landing — Swiss + Brutalist + Claymorphism experiment
+   ============================================================ */
+.clay {
+  background: #ede7dc;
+  box-shadow:
+    16px 16px 32px rgb(27 58 107 / 0.14),
+    -16px -16px 32px rgb(255 255 255 / 0.9),
+    inset 6px 6px 12px rgb(255 255 255 / 0.6),
+    inset -6px -6px 12px rgb(27 58 107 / 0.08);
+}
+.clay-btn {
+  background: #1b3a6b;
+  box-shadow:
+    8px 8px 18px rgb(27 58 107 / 0.35),
+    -6px -6px 16px rgb(255 255 255 / 0.5),
+    inset 3px 3px 6px rgb(255 255 255 / 0.18),
+    inset -3px -3px 6px rgb(0 0 0 / 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.clay-btn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    10px 10px 22px rgb(27 58 107 / 0.4),
+    -6px -6px 16px rgb(255 255 255 / 0.5),
+    inset 3px 3px 6px rgb(255 255 255 / 0.22),
+    inset -3px -3px 6px rgb(0 0 0 / 0.28);
+}
+.clay-inset {
+  background: #e4ddcf;
+  box-shadow:
+    inset 6px 6px 14px rgb(27 58 107 / 0.14),
+    inset -6px -6px 14px rgb(255 255 255 / 0.8);
+}
