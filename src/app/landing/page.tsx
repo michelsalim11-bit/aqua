@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {
   ArrowRight,
-  ArrowUpRight,
   ShieldCheck,
   FileCheck2,
   TrendingUp,
@@ -12,6 +11,9 @@ import {
   BarChart3,
   Users2,
 } from 'lucide-react';
+import { LeadForm } from './LeadForm';
+
+const WHATSAPP = 'https://wa.me/5511991948472';
 
 // Kregan/Raisah não estão disponíveis via Google Fonts (sem licença de embed web);
 // Bricolage Grotesque é o display mais próximo entre as fontes do sistema oficial.
@@ -55,10 +57,10 @@ const DIFERENCIAIS = [
 export default function LandingPage() {
   return (
     <div
-      className={`${display.variable} ${apoio.variable} ${body.variable} font-body bg-swiss-cream text-swiss-ink`}
+      className={`${display.variable} ${apoio.variable} ${body.variable} font-body bg-white text-swiss-ink`}
     >
       {/* ===================== HEADER ===================== */}
-      <header className="sticky top-0 z-20 bg-swiss-cream/90 backdrop-blur">
+      <header className="sticky top-0 z-20 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-[1280px] items-center justify-between px-5 py-5 md:px-10">
           <Link href="/" className="flex items-center gap-2" aria-label="Seja Acqua, página inicial">
             <Image src="/logo-green.svg" alt="Seja Acqua" width={120} height={26} priority className="h-6 w-auto md:h-7" />
@@ -103,14 +105,10 @@ export default function LandingPage() {
 
           <h1 className="font-display mt-6 max-w-[15ch] text-[13vw] font-extrabold leading-[0.98] tracking-tight text-white md:text-[4.4vw]">
             O poder é <span className="text-swiss-orange">seu</span>.
-            <br />
-            Comece a montar.
           </h1>
 
           <p className="font-apoio mt-6 max-w-[42ch] text-base leading-relaxed text-white/80 md:text-lg">
-            Seja Acqua aproxima você de oportunidades ligadas ao mercado de crédito e
-            recebíveis. Você conhece as condições, entende como cada possibilidade funciona e
-            decide com informação.
+            Investimentos em renda fixa de crédito privado, com o cliente no centro de tudo.
           </p>
 
           <div className="font-body mt-8 flex flex-wrap items-center gap-4">
@@ -272,22 +270,33 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ===================== VALORES ===================== */}
-      <section id="valores" className="bg-white px-5 py-20 md:px-10 md:py-28">
+      {/* ===================== VALORES — foto editorial de fundo ===================== */}
+      <section id="valores" className="relative isolate overflow-hidden px-5 py-20 md:px-10 md:py-28">
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src="/landing/pensa-foto.jpg"
+            alt="Fachada aconchegante de um bar à noite, com clientes à mesa"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-swiss-navy-deep/88 to-swiss-navy/70" />
+        </div>
+
         <div className="mx-auto max-w-[1280px]">
           <div className="mb-12 flex items-end justify-between gap-6 md:mb-16">
-            <h2 className="font-display text-3xl font-extrabold tracking-tight text-swiss-navy md:text-4xl">
+            <h2 className="font-display text-3xl font-extrabold tracking-tight text-white md:text-4xl">
               Como a Seja Acqua pensa.
             </h2>
-            <span className="font-apoio hidden text-[12px] font-medium uppercase tracking-[0.1em] text-swiss-navy/40 md:block">
+            <span className="font-apoio hidden text-[12px] font-medium uppercase tracking-[0.1em] text-white/50 md:block">
               03 princípios
             </span>
           </div>
 
           <div className="grid gap-5 md:grid-cols-3">
             {COMO_PENSA.map((v) => (
-              <div key={v.n} className="rounded-3xl bg-swiss-cream p-8 transition-transform hover:-translate-y-1">
-                <span className="font-apoio inline-flex h-9 w-9 items-center justify-center rounded-full bg-white text-[13px] font-bold text-swiss-orange">
+              <div key={v.n} className="rounded-3xl bg-white/95 p-8 backdrop-blur transition-transform hover:-translate-y-1">
+                <span className="font-apoio inline-flex h-9 w-9 items-center justify-center rounded-full bg-swiss-cream text-[13px] font-bold text-swiss-orange">
                   {v.n}
                 </span>
                 <h3 className="font-apoio mt-5 text-xl font-bold text-swiss-navy">{v.title}</h3>
@@ -298,36 +307,116 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ===================== CTA ===================== */}
-      <section className="px-5 py-20 md:px-10 md:py-28">
+      {/* ===================== CADASTRO — lead form real ===================== */}
+      <section id="cadastro" className="px-5 py-20 md:px-10 md:py-28">
         <div className="mx-auto max-w-[1280px]">
-          <div className="flex flex-col items-start gap-8 rounded-3xl bg-gradient-to-br from-swiss-navy to-swiss-orange p-10 text-white md:flex-row md:items-center md:justify-between md:p-16">
-            <div>
-              <span className="font-apoio rounded-full bg-white/15 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em]">
-                Faça seu cadastro
-              </span>
-              <h2 className="font-display mt-4 max-w-[18ch] text-3xl font-extrabold leading-tight tracking-tight md:text-5xl">
-                Conheça a plataforma.
-              </h2>
+          <div className="rounded-3xl bg-gradient-to-br from-swiss-navy to-swiss-navy-deep p-8 text-white md:p-14">
+            <div className="grid gap-10 md:grid-cols-2 md:gap-16">
+              <div>
+                <span className="font-apoio rounded-full bg-white/15 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em]">
+                  Faça seu cadastro
+                </span>
+                <h2 className="font-display mt-4 max-w-[16ch] text-3xl font-extrabold leading-tight tracking-tight md:text-5xl">
+                  Conheça a plataforma.
+                </h2>
+                <p className="font-apoio mt-5 max-w-[42ch] text-base leading-relaxed text-white/70">
+                  Deixe seus dados e nossa equipe entrará em contato para apresentar a
+                  plataforma, as oportunidades disponíveis e os próximos passos.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white/[0.06] p-6 md:p-8">
+                <LeadForm />
+              </div>
             </div>
-            <Link
-              href="/criar-conta"
-              className="font-body inline-flex flex-none items-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-semibold text-swiss-navy transition-transform hover:scale-[1.04]"
-            >
-              Criar conta
-              <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
-            </Link>
           </div>
         </div>
       </section>
 
       {/* ===================== FOOTER ===================== */}
-      <footer className="font-body px-5 py-6 md:px-10">
-        <div className="mx-auto flex max-w-[1280px] flex-col items-start justify-between gap-3 text-[12px] text-swiss-navy/50 md:flex-row md:items-center">
-          <span>© 2026 Seja Acqua</span>
-          <Link href="/" className="underline-offset-4 hover:underline">
-            ← Voltar para o site
-          </Link>
+      <footer className="font-body border-t border-swiss-navy/10 bg-white px-5 pt-16 md:px-10">
+        <div className="mx-auto max-w-[1280px]">
+          <div className="grid gap-12 pb-12 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
+            <div>
+              <Link href="/" className="flex items-center" aria-label="Seja Acqua, página inicial">
+                <Image src="/logo-green.svg" alt="Seja Acqua" width={120} height={26} className="h-7 w-auto" />
+              </Link>
+              <p className="font-apoio mt-4 max-w-[28ch] text-[15px] text-swiss-navy/55">
+                O poder é seu.
+              </p>
+              <a
+                href="https://www.instagram.com/sejaacqua/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="mt-5 inline-flex h-9 w-9 items-center justify-center rounded-full border border-swiss-navy/15 text-swiss-navy/60 transition-colors hover:border-swiss-navy/30 hover:text-swiss-navy"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor" />
+                </svg>
+              </a>
+            </div>
+
+            <div>
+              <h4 className="text-[12px] font-semibold uppercase tracking-[0.1em] text-swiss-navy/40">Institucional</h4>
+              <ul className="mt-4 flex flex-col gap-3 text-[14px] text-swiss-navy/65">
+                <li><a href="/#quem" className="transition-colors hover:text-swiss-navy">Conheça a Seja Acqua</a></li>
+                <li><a href="/#mvv" className="transition-colors hover:text-swiss-navy">Missão, visão e valores</a></li>
+                <li><a href="#mercado" className="transition-colors hover:text-swiss-navy">O mercado</a></li>
+                <li><a href="/#produto" className="transition-colors hover:text-swiss-navy">Soluções</a></li>
+                <li><Link href="/calculadora" className="transition-colors hover:text-swiss-navy">Calculadora</Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="text-[12px] font-semibold uppercase tracking-[0.1em] text-swiss-navy/40">Contato</h4>
+              <ul className="mt-4 flex flex-col gap-3 text-[14px] text-swiss-navy/65">
+                <li><a href="#cadastro" className="transition-colors hover:text-swiss-navy">Tenho interesse</a></li>
+                <li><a href="mailto:contato@sejaacqua.com.br" className="transition-colors hover:text-swiss-navy">contato@sejaacqua.com.br</a></li>
+                <li>Segunda a sexta, das 9h às 18h</li>
+                <li>
+                  <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-swiss-navy">
+                    Fale com a gente
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="text-[12px] font-semibold uppercase tracking-[0.1em] text-swiss-navy/40">Privacidade</h4>
+              <ul className="mt-4 flex flex-col gap-3 text-[14px] text-swiss-navy/65">
+                <li><a href="mailto:dpo@sejaacqua.com.br" className="transition-colors hover:text-swiss-navy">dpo@sejaacqua.com.br</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border-t border-swiss-navy/10 py-8">
+            <span className="text-[11px] font-semibold uppercase tracking-[0.1em] text-swiss-navy/35">Disclaimer</span>
+            <p className="mt-3 max-w-[90ch] text-[13px] leading-relaxed text-swiss-navy/45">
+              As informações apresentadas possuem caráter exclusivamente institucional e
+              informativo e não constituem oferta, recomendação ou aconselhamento financeiro. As
+              possibilidades eventualmente disponibilizadas pela Seja Acqua estão sujeitas a
+              critérios, análise, disponibilidade, condições específicas e riscos. O cadastro ou
+              o contato com a Seja Acqua não representa aprovação, contratação, garantia de
+              acesso, remuneração ou resultado.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-start justify-between gap-3 border-t border-swiss-navy/10 py-6 text-[12px] text-swiss-navy/50 md:flex-row md:items-center">
+            <div className="flex flex-wrap gap-x-6 gap-y-2">
+              <Link href="/termos-de-uso" className="transition-colors hover:text-swiss-navy">Termos de Uso</Link>
+              <Link href="/politica-de-privacidade" className="transition-colors hover:text-swiss-navy">Política de Privacidade</Link>
+              <Link href="/codigo-de-etica-e-conduta" className="transition-colors hover:text-swiss-navy">Código de Ética e Conduta</Link>
+            </div>
+            <div className="flex items-center gap-4">
+              <span>© 2026 Seja Acqua</span>
+              <Link href="/" className="underline-offset-4 hover:underline">
+                ← Voltar para o site
+              </Link>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
